@@ -1,0 +1,11 @@
+    "ver-run": "npm run dist && npm run makever",
+    "ver-run-dark": "npm run dist && npm run makeverdark",
+    "makever": "npm run copydist",
+    "makeverdark": "npm run copydistdark",
+    "copydist": "copyfiles -E --up 1 dist/**/* ../../../dist",
+    "copydistdark": "copyfiles -E --up 1 dist/**/* ../../../distdark",
+
+
+    DO VENDOR
+    git clone https://github.com/orestbida/cookieconsent.git
+    
