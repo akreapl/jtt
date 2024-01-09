@@ -2,11 +2,25 @@
     <div class="container pt-5">
         <div class="row">
             <div class="col-12 mt-3 mt-md-0 d-flex flex-wrap justify-content-center">
-                <h1 class="mt-4">Obszary <span class="text-primary">praktyki</span></h1>
+                <h1 class="mt-4">Poznaj <span class="text-primary">nas</span></h1>
             </div>
         </div>
     </div>
 </div>
+
+<div class="bg-white">
+    <div class="container pt-5">
+        <div class="row">
+            <div class="col-12 mt-3 mt-md-0 d-flex flex-wrap justify-content-center">
+                <p class="h4 fst-italic">"Od ponad 10 lat tworzymy zespół specjalistów znających się na świadczeniu profesjonalnych usług prawnych oraz doradztwa prawnego zarówno klientom indywidualnym, jak i przedsiębiorcom, na terenie całej Polski.Od ponad 10 lat tworzymy zespół specjalistów znających się na świadczeniu profesjonalnych usług prawnych oraz doradztwa prawnego zarówno klientom indywidualnym, jak i przedsiębiorcom, na terenie całej Polski."</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
 
 <div class="bg-white" style="min-height:540px;">
     <div class="container pb-5">

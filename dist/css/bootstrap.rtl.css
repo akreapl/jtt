@@ -6613,7 +6613,7 @@ ul.navbar-nav > li:last-child > a.nav-link.active {
 
 .model {
   width: 100%;
-  height: 500px;
+  height: 300px;
   transition: all 400ms ease-out;
 }
 
@@ -6627,16 +6627,12 @@ ul.navbar-nav > li:last-child > a.nav-link.active {
   color: #fff !important;
 }
 
-/* .model-box:nth-of-type(odd) .model{
-    width:90%;
-    min-height:740px;
-} */
 #scrolltop {
   background: rgb(161, 57, 65);
 }
 
 #scrolltop:hover {
-  background: rgb(215, 175, 125);
+  background: #7b2c32;
 }
 
 #scrolltop {
@@ -6713,14 +6709,6 @@ ul.navbar-nav > li:last-child > a.nav-link.active {
   scale: 1.2;
   transition: all 400ms ease-out;
   fill: #fff;
-}
-
-.model:hover .vicon {
-  rotate: 45deg;
-}
-
-.model:hover .vicon svg {
-  rotate: -45deg;
 }
 
 .privacy-link {

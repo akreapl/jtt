@@ -2,8 +2,7 @@
     <div class="container pt-5 pb-1">
         <div class="row">
             <div class="col-12 text-center">
-                <h2 style="font-size:3.0rem;">POZNAJ NAS</h2>
-                <p style="font-size:1.2rem;">______.</p>
+                <h1 class="mt-4">Nasi <span class="text-primary">prawnicy</span></h1>
             </div>
         </div>
     </div>
