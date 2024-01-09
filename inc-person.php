@@ -1,4 +1,4 @@
-<div class="container py-5">
+<div class="container py-1">
     <div class="row">
         <div class="mt-5 mt-md-0 d-flex justify-content-start">
             <h2 class="text-primary fw-bold underline mt-5" style="font-size:2.0rem;">Zacznij współpracę</h2>
