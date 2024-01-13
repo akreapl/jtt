@@ -10,7 +10,7 @@
 vendor/composer/*
 vendor/twbs/bootstrap/*
 !vendor/twbs/bootstrap/dist/
-!vendor/twbs/bootstrap/scss/*.*
+!vendor/twbs/bootstrap/scss/
 !vendor/twbs/bootstrap/*.js
 !vendor/twbs/bootstrap/*.json
 vendor/cookieconsent-3/*
