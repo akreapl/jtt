@@ -1,0 +1,201 @@
+h1:after, h2:after, h3:after, h4:after, h5:after, h6:after {
+  content:'';
+  margin:10px auto;
+  border: 2px solid $secondary;
+  display: block;
+  width:55%;
+}
+
+ul.navbar-nav>li:last-child>a {
+  background: $primary;
+  border-radius: 10px;
+  padding: 5px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  text-align: center !important;
+  text-transform: uppercase;
+}
+
+
+@media (max-width: 768px) {
+  ul.navbar-nav>li:last-child>a {
+    background: $primary;
+    padding: 10px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    text-align: center !important;
+  }
+}
+
+ul.navbar-nav>li:last-child>a.nav-link {
+  margin-top: 5px;
+}
+
+ul.navbar-nav>li:last-child>a.nav-link.active {
+  color: #fff;
+}
+
+.navbar-nav li {
+  margin: 0px 10px 0px 10px;
+}
+
+.newsimg {
+  position: relative;
+  padding: 4px 4px 0px 0px;
+  width: 100%;
+}
+
+.newsdesc {
+  background: rgba(12, 20, 48, 0.85);
+  position: absolute;
+  top: 80px;
+  right: 4px;
+  height: 120px;
+  width: 70%;
+}
+
+.news {
+  overflow: hidden;
+}
+
+.news:hover img {
+  scale: 1.1;
+  transition: all 400ms ease-out;
+}
+
+.model {
+  width: 100%;
+  height: 300px;
+  transition: all 400ms ease-out;
+}
+
+.model:hover {
+  background: $primary;
+  color: #fff !important;
+  border:1px;
+}
+
+.model:hover .text-primary,
+.model:hover .text-black {
+  color: #fff !important;
+}
+
+#scrolltop {
+  background: $primary;
+}
+
+#scrolltop:hover {
+  background: darken($primary, 10%);
+}
+
+#scrolltop {
+  display: block;
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0s, opacity 0.5s ease-in;
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  padding: 5px;
+}
+
+.top-button {
+  text-decoration: none;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 1.5;
+  cursor: pointer;
+  padding: 12px;
+  color: #fff;
+}
+
+.overlay {
+  position: absolute;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.3);
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transition: .5s ease;
+  opacity: 1;
+}
+
+.stage {
+  position: relative;
+  padding: 10px;
+  transition: all 200ms ease-out;
+  cursor: pointer;
+}
+
+.stage:hover {
+  border-bottom: 0px
+}
+
+.stage:before {
+  content: '';
+  width: 100%;
+  height: 3px;
+  background: $secondary;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  background: linear-gradient(to left, rgb(194, 194, 194) 50%, $secondary 50%) right;
+  background-size: 200%;
+}
+
+.stage:hover:before {
+  background-position: left;
+}
+
+.vicon {
+  background: $primary;
+  border-radius: 20px;
+  width: 120px;
+  height: 120px;
+  transition: .7s ease;
+  padding: 10px;
+}
+
+.model:hover .vicon svg,
+.stage:hover .vicon svg {
+  scale: 1.2;
+  transition: all 400ms ease-out;
+  fill: $white;
+}
+
+.privacy-link {
+  color: $gray-300;
+}
+
+.privacy-link:hover {
+  color: #fff;
+}
+
+.model-desc ul li {
+  list-style-type: none;
+  margin-top: 15px;
+}
+
+.model-desc ul li::before {
+  content: url('./img/icons/check-mark.svg');
+  float: left;
+  width: 10px;
+  height: 10px;
+  margin: 0px 25px 0px 0px;
+}
+
+.news-title {
+  min-height: 60px;
+  float: left;
+}
+
+.news-excerpt-text {
+  min-height: 250px;
+  text-align: justify;
+}
