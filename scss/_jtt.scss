@@ -154,16 +154,14 @@ ul.navbar-nav>li:last-child>a.nav-link.active {
 }
 
 .vicon {
-  background: $primary;
-  border-radius: 20px;
   width: 120px;
   height: 120px;
   transition: .7s ease;
   padding: 10px;
 }
 
-.model:hover .vicon svg,
-.stage:hover .vicon svg {
+.model:hover .vicon /*svg,*/
+.stage:hover .vicon /*svg*/ {
   scale: 1.2;
   transition: all 400ms ease-out;
   fill: $white;

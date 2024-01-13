@@ -1,4 +1,4 @@
-<div class="container">
+
     <div id="carouselExampleDark" class="carousel carousel-dark slide">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -7,28 +7,28 @@
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active" data-bs-interval="10000">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/slider1.jpg" class="" alt="...">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/1.svg" class="" alt="...">
                 <div class="carousel-caption d-none d-md-block" style="position: absolute; top:100px; right:40px;">
                     <h3 clas>First slide label</h3>
                     <p>Some representative placeholder content for the first slide.</p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/slider2.jpg" class="" alt="...">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/2.svg" class="" alt="...">
                 <div class="carousel-caption d-none d-md-block" style="position: absolute; top:100px; right:40px;">
                     <h3>First slide label</h3>
                     <p>Some representative placeholder content for the first slide.</p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/slider3.jpg" class="" alt="...">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/3.svg" class="" alt="...">
                 <div class="carousel-caption d-none d-md-block" style="position: absolute; top:100px; right:40px;">
                     <h3>First slide label</h3>
                     <p>Some representative placeholder content for the first slide.</p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/slider4.jpg" class="" alt="...">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/4.svg" class="" alt="...">
                 <div class="carousel-caption d-none d-md-block" style="position: absolute; top:100px; right:40px;">
                     <h3>First slide label</h3>
                     <p>Some representative placeholder content for the first slide.</p>
@@ -44,4 +44,3 @@
             <span class="visually-hidden">Następny</span>
         </button>
     </div>
-</div>

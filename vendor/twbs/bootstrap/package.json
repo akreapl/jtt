@@ -39,6 +39,9 @@
   "sass": "scss/bootstrap.scss",
   "style": "dist/css/bootstrap.css",
   "scripts": {
+    "ver-run": "npm run dist && npm run makever",
+    "makever": "npm run copydist",
+    "copydist": "copyfiles -E --up 1 dist/**/* ../../../dist",
     "start": "npm-run-all --parallel watch docs-serve",
     "bundlewatch": "bundlewatch --config .bundlewatch.config.json",
     "css": "npm-run-all css-compile css-prefix css-rtl css-minify",

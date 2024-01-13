@@ -8,7 +8,31 @@ body {
     font-family: 'Kumbh Sans', sans-serif !important;
 }
 
+.vicon { width:33%;}
+
 /* font-family: 'Noto Sans',
 sans-serif;
 font-family: 'Source Serif 4',
 serif; */
+
+.model-box .vicon img {
+    transition: all 400ms ease-out;
+  }
+
+.model-box:hover .vicon img {
+  scale: 1.3;
+  transition: all 400ms ease-out;
+}
+
+.model-box:hover h3::after {
+    border:2px solid rgb(161, 57, 65);
+}
+
+.model-box:hover p {
+    color: #000 !important;
+}
+
+.form-control:focus {
+    background: rgba(0,0,0,0.06) !important;
+    box-shadow: none !important;
+}
