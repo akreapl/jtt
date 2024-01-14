@@ -1,10 +1,16 @@
-<div class="pb-5 d-flex align-content-center bg-secondary">
-    <div class=" container py-5">
-        <div class="row gx-4 d-flex justify-content-center models align-content-around">
-            <div class="col-12 my-5 mt-md-0 d-flex justify-content-center">
-                <h1 class="mt-4">W czym się <span class="text-primary">specjalizujemy</span></h1>
+<div class="d-flex align-content-center">
+    <div class="container py-5">
+        <div class="row gx-4 d-flex justify-content-center models align-content-around align-items-center">
+            <div class="col-12 mt-5 mt-md-0 d-flex justify-content-center">
+                <h1>W czym się <span class="text-primary">specjalizujemy</span></h1>
             </div>
+        </div>
+    </div>
+</div>
 
+<div class="d-flex align-content-center bg-secondary py-5">
+    <div class="container">
+        <div class="row gx-4 d-flex justify-content-center models align-content-around">
             <div class="col-md-4 co-sm-12 mt-3 mt-md-0 d-flex justify-content-center model-box">
                 <a href="#" class="text-decoration-none w-100">
                     <div class="col-12 my-4">
@@ -131,7 +137,7 @@
                         </div>
                     </div>
                 </a>
-            </div>            
+            </div>
         </div>
     </div>
 </div>
