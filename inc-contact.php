@@ -1,12 +1,12 @@
-<div class="container py-1">
+<div class="container pt-1">
     <div class="row">
-        <div class="mt-5 mt-md-0 d-flex justify-content-start">
-            <h2 class="text-primary fw-bold underline mt-5" style="font-size:2.0rem;">Zacznij współpracę</h2>
+        <div class="mt-5 d-flex justify-content-center">
+            <h1 class="mt-5" style="font-size:2.0rem;">Zacznij współpracę</h1>
         </div>
-        <div class="col-md-6 col-sm-12 mt-5 mt-md-5 pb-5 text-left text-primary d-flex flex-row flex-wrap justify-content-start align-items-start">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/img.webp" class="img-fluid rounded" />
+        <div class="col-md-6 col-sm-12 mt-5 mt-md-5 d-flex flex-row justify-content-start align-items-start overflow-hidden">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/mj.png" class="img-fluid" />
         </div>
-        <div class="col-md-5 col-sm-12 mt-5 mt-md-5 pb-5 d-flex flex-column flex-md-row justify-content-around text-left text-primary">
+        <div class="col-md-5 col-sm-12 mt-5 mt-md-5 d-flex flex-column flex-md-row justify-content-around text-left text-primary">
             <form style="background-color: rgba(255,255,255,0.05);" class="row p-5 newsimg" enctype="multipart/form-data" method="post" ref="form" action="/dziekujemy-za-kontakt/">
                 <p class="fs-3">Wypełnij formularz - skontaktujemy się z Tobą</p>
                 <div class="col-md-12 mt-1">

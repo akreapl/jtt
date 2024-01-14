@@ -15,6 +15,18 @@ sans-serif;
 font-family: 'Source Serif 4',
 serif; */
 
+.nav-link:hover {
+    font-weight: bold;
+}
+
+.model {
+    border: 5px solid transparent;
+}
+
+.model:hover {
+    border: 5px solid #f8f0e7;
+}
+
 .model-box .vicon img {
     transition: all 400ms ease-out;
   }
@@ -47,4 +59,35 @@ serif; */
     display:block;
     margin-right:1px;
     transition: all 400ms ease-in-out;
+}
+
+.bg-slider {
+    background-color: #f8f0e7;
+}
+
+.slider-header {
+    text-align: left;
+}
+
+.slider-header::after {
+    content: '';
+    border: none !important;
+}
+
+.query-form {
+    border:5px solid #fff;
+    min-height: 300px;
+    background-color: #fff;
+    font-weight: bold;
+    font-size:1.2em;
+}
+
+a .query-form {
+    color:#000;
+    border:5px solid #f8f0e7;
+}
+
+
+a:hover .query-form {
+    color:#000;
 }
