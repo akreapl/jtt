@@ -36,3 +36,15 @@ serif; */
     background: rgba(0,0,0,0.06) !important;
     box-shadow: none !important;
 }
+
+.btn svg {
+    display:none;
+    margin-right: 30px;
+    transition: all 400ms ease-in-out;
+}
+
+.btn:hover svg {
+    display:block;
+    margin-right:1px;
+    transition: all 400ms ease-in-out;
+}
