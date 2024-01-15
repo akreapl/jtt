@@ -66,6 +66,34 @@
                     </div>
                 </a>
             </div>
+
+            <div class="col-md-4 col-sm-12 mt-0 mb-5">
+                <a href="#" class="d-flex justify-content-center lawyer">
+                    <div class="lawyer overflow-hidden d-flex justify-content-center align-items-center">
+                        <div class="position-relative">
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/lawyer2.png" class="img-fluid" />
+                            <div class="lawyer-description position-absolute px-5">
+                                <p class="h3 mt-4">Witold Jagiełło</p>
+                                <p>Radca prawny, Partner</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-md-4 col-sm-12 mt-0 mb-5">
+                <a href="#" class="d-flex justify-content-center lawyer">
+                    <div class="lawyer overflow-hidden d-flex justify-content-center align-items-center">
+                        <div class="position-relative">
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/lawyer1.png" class="img-fluid" />
+                            <div class="lawyer-description position-absolute px-5">
+                                <p class="h3 mt-4">Artur Tobolewski</p>
+                                <p>Radca prawny, Partner</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
         </div>
     </div>
 </div>
