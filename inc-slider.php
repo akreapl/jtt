@@ -1,4 +1,4 @@
-<div id="carouselExampleDark" class="carousel carousel-dark slide carousel-fade d-none d-md-block" style="margin-top:98px;">
+<div id="carouselExampleDark" class="carousel carousel-dark slide carousel-fade d-none d-md-block" style="margin-top:70px;">
     <div class="carousel-inner">
         <div class="carousel-item bg-slider active position-relative overflow-hidden" data-bs-interval="10000">
             <img src="<?php echo get_template_directory_uri(); ?>/img/1.svg" class="" alt="...">
