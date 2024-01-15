@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row pt-5">
             <div class="col-12 d-flex flex-wrap justify-content-center align-content-center pt-5">
-                <h1>Wypełnij formularz, <span class="text-primary">a otrzymasz od nas darmową konsultację</span></h1>
+                <h1>Wypełnij formularz, a otrzymasz od nas <span class="text-primary">darmową konsultację</span></h1>
             </div>
         </div>
     </div>

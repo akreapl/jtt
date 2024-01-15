@@ -1,12 +1,12 @@
 <div class="container pt-1">
     <div class="row">
         <div class="mt-5 d-flex justify-content-center">
-            <h1 class="mt-5" style="font-size:2.0rem;">Zacznij współpracę</h1>
+            <h1 class="mt-5">Zacznij <span class="text-primary">współpracę</span></h1>
         </div>
-        <div class="col-md-6 col-sm-12 mt-5 mt-md-5 d-flex flex-row justify-content-start align-items-start overflow-hidden">
+        <div class="col-md-5 col-sm-12 mt-5 mt-md-5 d-flex flex-row justify-content-start align-items-end overflow-hidden">
             <img src="<?php echo get_template_directory_uri(); ?>/img/mj.png" class="img-fluid" />
         </div>
-        <div class="col-md-5 col-sm-12 mt-5 mt-md-5 d-flex flex-column flex-md-row justify-content-around text-left text-primary">
+        <div class="col-md-6 col-sm-12 mt-5 mt-md-5 d-flex flex-column flex-md-row justify-content-around text-left text-primary">
             <form style="background-color: rgba(255,255,255,0.05);" class="row p-5 newsimg" enctype="multipart/form-data" method="post" ref="form" action="/dziekujemy-za-kontakt/">
                 <p class="fs-3">Wypełnij formularz - skontaktujemy się z Tobą</p>
                 <div class="col-md-12 mt-1">
