@@ -21,8 +21,8 @@
 </head>
 
 <div class="bg-white">
-    <div class="top-menu fixed-top bg-white">
-        <nav class="navbar navbar-expand-md">
+    <div class="top-menu fixed-top bg-primary2">
+        <nav class="navbar navbar-dark navbar-expand-md">
             <div class="container">
                 <a class="navbar-brand" href="<?php echo esc_url(home_url('/')); ?>">
                     <img src="<?php echo get_template_directory_uri(); ?>/img/jtt-logo.png" style="width:100px; height:auto;" alt="<?php echo bloginfo(); ?>" class="img-fluid lazy" />
@@ -47,9 +47,9 @@
                             'walker' => new bootstrap_5_wp_nav_menu_walker()
                         ));
                         ?>
+                        <a class="text-white" href="tel:+48914331066">+48 91 433 10 66</a>
                     </div>
                 </div>
-            </div>
         </nav>
     </div>
 </div>

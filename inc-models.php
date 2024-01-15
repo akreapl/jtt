@@ -10,14 +10,14 @@
 
 <div class="d-flex align-content-center bg-white pb-3">
     <div class="container pb-5">
-        <div class="row">
-            <div class="col">
+        <div class="row pb-5 d-flex justify-content-between align-content-between">
+            <div class="col-md-4 col-sm-12 my-3">
                 <a href="#" class="text-decoration-none w-100">
-                    <div class="model shadow bg-white d-flex flex-column align-items-center justify-content-start">
+                    <div class="model shadow bg-white d-flex flex-column align-items-center justify-content-center">
                         <div class="vicon d-flex align-items-center justify-content-center">
                             <img src="<?php echo get_template_directory_uri(); ?>/img/icon-chf.jpg" class="img-fluid" alt="...">
                         </div>
-                        <div class="model-name m-3">
+                        <div class="model-name mx-3 mt-sm-3">
                             <h3 class="text-black text-center">Frankowicze</h3>
                             <p class="text-primary text-center mt-3" style="width:80%; margin: auto;">skutecznie negocjujemy z bankami i pomagamy naszym Klientom odzyskać nadpłacone środki</p>
                         </div>
@@ -25,13 +25,13 @@
                 </a>
             </div>
 
-            <div class="col">
+            <div class="col-md-4 col-sm-12 my-3">
                 <a href="#" class="text-decoration-none w-100">
-                    <div class="model shadow bg-white d-flex flex-column align-items-center justify-content-start">
+                    <div class="model shadow bg-white d-flex flex-column align-items-center justify-content-center">
                         <div class="vicon d-flex align-items-center justify-content-center">
                             <img src="<?php echo get_template_directory_uri(); ?>/img/icon-pln-v1.jpg" class="img-fluid" alt="...">
                         </div>
-                        <div class="model-name m-3">
+                        <div class="model-name mx-3 mt-sm-3">
                             <h3 class="text-black text-center">Złotówkowicze</h3>
                             <p class="text-primary text-center mt-3" style="width:80%; margin: auto;">skutecznie negocjujemy z bankami i pomagamy naszym Klientom odzyskać nadpłacone środki</p>
                         </div>
@@ -39,27 +39,41 @@
                 </a>
             </div>
 
-            <div class="col">
+            <div class="col-md-4 col-sm-12 my-3">
                 <a href="#" class="text-decoration-none w-100">
-                    <div class="model shadow bg-white d-flex flex-column align-items-center justify-content-start">
+                    <div class="model shadow bg-white d-flex flex-column align-items-center justify-content-center">
                         <div class="vicon d-flex align-items-center justify-content-center">
                             <img src="<?php echo get_template_directory_uri(); ?>/img/icon-spadki.jpg" class="img-fluid" alt="...">
                         </div>
-                        <div class="model-name m-3">
-                            <h3 class="text-black text-center">Spadki</h3>
+                        <div class="model-name mx-3 mt-sm-3">
+                            <h3 class="text-black text-center">Spadkobiercy</h3>
                             <p class="text-primary text-center mt-3" style="width:80%; margin: auto;">rozwiązujemy sprawy spadkowe szybko i sprawnie</p>
                         </div>
                     </div>
                 </a>
             </div>
 
-            <div class="col">
+            <div class="col-md-4 col-sm-12 my-3">
                 <a href="#" class="text-decoration-none w-100">
-                    <div class="model shadow bg-white d-flex flex-column align-items-center justify-content-start">
+                    <div class="model shadow bg-white d-flex flex-column align-items-center justify-content-center">
                         <div class="vicon d-flex align-items-center justify-content-center">
                             <img src="<?php echo get_template_directory_uri(); ?>/img/icon-poszkodowani.jpg" class="img-fluid" alt="...">
                         </div>
-                        <div class="model-name m-3">
+                        <div class="model-name mx-3 mt-sm-3">
+                            <h3 class="text-black text-center">Konsumenci</h3>
+                            <p class="text-primary text-center mt-3" style="width:80%; margin: auto;">skutecznie negocjujemy z bankami i pomagamy naszym Klientom odzyskać nadpłacone środki</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-md-4 col-sm-12 my-3">
+                <a href="#" class="text-decoration-none w-100">
+                    <div class="model shadow bg-white d-flex flex-column align-items-center justify-content-center">
+                        <div class="vicon d-flex align-items-center justify-content-center">
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/icon-poszkodowani.jpg" class="img-fluid" alt="...">
+                        </div>
+                        <div class="model-name mx-3 mt-sm-3">
                             <h3 class="text-black text-center">Poszkodowani</h3>
                             <p class="text-primary text-center mt-3" style="width:80%; margin: auto;">skutecznie negocjujemy z bankami i pomagamy naszym Klientom odzyskać nadpłacone środki</p>
                         </div>
@@ -67,13 +81,13 @@
                 </a>
             </div>
 
-            <div class="col">
+            <div class="col-md-4 col-sm-12 my-3">
                 <a href="#" class="text-decoration-none w-100 d-flex flex-column align-items-center justify-content-start">
-                    <div class="model shadow bg-white d-flex flex-column align-items-center justify-content-start">
+                    <div class="model shadow bg-white d-flex flex-column align-items-center justify-content-center">
                         <div class="vicon d-flex align-items-center justify-content-center">
                             <img src="<?php echo get_template_directory_uri(); ?>/img/icon-przedsiebiorcy-v1.jpg" class="img-fluid" alt="...">
                         </div>
-                        <div class="model-name m-3">
+                        <div class="model-name mx-3 mt-sm-3">
                             <h3 class="text-black text-center">Przedsiębiorcy</h3>
                             <p class="text-primary text-center mt-3" style="width:80%; margin: auto;">skutecznie negocjujemy z bankami i pomagamy naszym Klientom odzyskać nadpłacone środki</p>
                         </div>
@@ -83,81 +97,3 @@
         </div>
     </div>
 </div>
-
-
-<!--pierwotna wersja
-<div class="d-flex align-content-center bg-white py-3">
-    <div class="container">
-        <div class="row gx-4 d-flex justify-content-center models align-content-around">
-            <div class="col-md-3 col-sm-12 mt-3 mt-md-0 d-flex justify-content-center model-box">
-                <a href="#" class="text-decoration-none w-100">
-                    <div class="model shadow bg-white d-flex flex-column align-items-center justify-content-start">
-                        <div class="vicon d-flex align-items-center justify-content-center">
-                            <img src="<?php echo get_template_directory_uri(); ?>/img/icon-chf.jpg" class="img-fluid" alt="...">
-                        </div>
-                        <div class="model-name m-3">
-                            <h3 class="text-black text-center">Frankowicze</h3>
-                            <p class="text-primary text-center mt-3" style="width:80%; margin: auto;">skutecznie negocjujemy z bankami i pomagamy naszym Klientom odzyskać nadpłacone środki</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-            <div class="col-md-3 col-sm-12 mt-3 mt-md-0 d-flex justify-content-center model-box">
-                <a href="#" class="text-decoration-none w-100">
-                    <div class="model shadow bg-white d-flex flex-column align-items-center justify-content-start">
-                        <div class="vicon d-flex align-items-center justify-content-center">
-                            <img src="<?php echo get_template_directory_uri(); ?>/img/icon-pln-v1.jpg" class="img-fluid" alt="...">
-                        </div>
-                        <div class="model-name m-3">
-                            <h3 class="text-black text-center">Złotówkowicze</h3>
-                            <p class="text-primary text-center mt-3" style="width:80%; margin: auto;">skutecznie negocjujemy z bankami i pomagamy naszym Klientom odzyskać nadpłacone środki</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-            <div class="col-md-3 col-sm-12 mt-3 mt-md-0 d-flex justify-content-center model-box">
-                <a href="#" class="text-decoration-none w-100">
-                    <div class="model shadow bg-white d-flex flex-column align-items-center justify-content-start">
-                        <div class="vicon d-flex align-items-center justify-content-center">
-                            <img src="<?php echo get_template_directory_uri(); ?>/img/icon-spadki.jpg" class="img-fluid" alt="...">
-                        </div>
-                        <div class="model-name m-3">
-                            <h3 class="text-black text-center">Spadki</h3>
-                            <p class="text-primary text-center mt-3" style="width:80%; margin: auto;">rozwiązujemy sprawy spadkowe szybko i sprawnie</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-            <div class="col-md-3 col-sm-12 mt-3 mt-md-0 d-flex justify-content-center model-box">
-                <a href="#" class="text-decoration-none w-100">
-                    <div class="model shadow bg-white d-flex flex-column align-items-center justify-content-start">
-                        <div class="vicon d-flex align-items-center justify-content-center">
-                            <img src="<?php echo get_template_directory_uri(); ?>/img/icon-poszkodowani.jpg" class="img-fluid" alt="...">
-                        </div>
-                        <div class="model-name m-3">
-                            <h3 class="text-black text-center">Poszkodowani</h3>
-                            <p class="text-primary text-center mt-3" style="width:80%; margin: auto;">skutecznie negocjujemy z bankami i pomagamy naszym Klientom odzyskać nadpłacone środki</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-            <div class="col-md-3 mt-3 mt-md-0 d-flex justify-content-center model-box">
-                <a href="#" class="text-decoration-none w-100 d-flex flex-column align-items-center justify-content-start">
-                    <div class="model shadow bg-white d-flex flex-column align-items-center justify-content-start">
-                        <div class="vicon d-flex align-items-center justify-content-center">
-                            <img src="<?php echo get_template_directory_uri(); ?>/img/icon-przedsiebiorcy-v1.jpg" class="img-fluid" alt="...">
-                        </div>
-                        <div class="model-name m-3">
-                            <h3 class="text-black text-center">Przedsiębiorcy</h3>
-                            <p class="text-primary text-center mt-3" style="width:80%; margin: auto;">skutecznie negocjujemy z bankami i pomagamy naszym Klientom odzyskać nadpłacone środki</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>
-</div> -->

@@ -6579,35 +6579,16 @@ h1:after, .h1:after, h2:after, .h2:after, h3:after, .h3:after, h4:after, .h4:aft
   width: 55%;
 }
 
-ul.navbar-nav > li:last-child > a {
-  background: rgb(161, 57, 65);
-  border-radius: 10px;
-  padding: 5px;
+a.nav-link {
   color: #fff;
-  display: flex;
-  align-items: center;
-  align-content: center;
-  text-align: center !important;
-  text-transform: uppercase;
+}
+a.nav-link:hover {
+  font-weight: bold;
 }
 
-@media (max-width: 768px) {
-  ul.navbar-nav > li:last-child > a {
-    background: rgb(161, 57, 65);
-    padding: 10px;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    align-content: center;
-    text-align: center !important;
-  }
-}
-ul.navbar-nav > li:last-child > a.nav-link {
-  margin-top: 5px;
-}
-
-ul.navbar-nav > li:last-child > a.nav-link.active {
+a.nav-link.active {
   color: #fff;
+  font-weight: bold;
 }
 
 .navbar-nav li {
@@ -6727,7 +6708,6 @@ ul.navbar-nav > li:last-child > a.nav-link.active {
 .model:hover .vicon .stage:hover .vicon {
   scale: 1.2;
   transition: all 400ms ease-out;
-  fill: #fff;
 }
 
 .privacy-link {
