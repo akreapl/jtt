@@ -7,9 +7,11 @@ get_header(); ?>
 include_once('inc-page-header.php'); ?>
 
 <div class="container text-justify pagetopmargin">
-    <?php the_content(); ?>
     <?php
-    echo get_the_post_thumbnail($post->ID, 'full', array('class' => 'img-fluid mb-4 overflow-hidden'));
+    echo get_the_post_thumbnail($post->ID, '', array('class' => 'img-fluid mb-4 overflow-hidden'));
+    the_content(); ?>
+    <?php
+
     // Start the loop.
     while (have_posts()) : the_post();
         // Include the single post content template.

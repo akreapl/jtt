@@ -1,13 +1,24 @@
-<div class="container-fluid py-5 mt-5 bg-primary">
+<div class="container-fluid py-3 bg-primary" style="margin-top:121px;">
     <div class="container">
-        <div class="row gx-5 d-flex justify-content-between align-items-center align-content-around">
+        <div class="row d-flex justify-content-between align-items-center align-content-around">
             <div class="col-12 d-flex align-items-center">
-                <p class="text-white m-0 p-0 breadcrumbdark">
+                <p class="breadcrumbs text-white m-0 p-0">
                     <?php
                     get_breadcrumb();
                     ?>
                 </p>
-                <h2 class="mt-4"><?php echo get_the_title(); ?></h2>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid bg-white py-5">
+    <div class="container">
+        <div class="row gx-5 d-flex justify-content-start align-items-center align-content-around">
+            <div class="col-12">
+                <h1 class="noafter p-0 m-0"><?php echo get_the_title(); ?></h1>
             </div>
         </div>
     </div>

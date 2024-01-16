@@ -21,7 +21,7 @@ if (!function_exists('akreawp_setup')) :
      * @link http://codex.wordpress.org/Function_Reference/add_theme_support#Post_Thumbnails
      */
         add_theme_support('post-thumbnails');
-        add_theme_support( 'title-tag');
+        add_theme_support('title-tag');
         set_post_thumbnail_size(600, 600, true);
 
         /*
@@ -145,25 +145,26 @@ add_filter('get_the_archive_title', function ($title) {
 });
 
 //Register menus
+
 function mainmenu_setup()
 {
     register_nav_menus(
         array(
-            'main_menu' => __('Główne menu', 'akreawp'),
+            'main' => __('Główne menu', 'akreawp'),
         )
     );
 }
 add_action('after_setup_theme', 'mainmenu_setup');
 
-function footer_menu_setup()
-{
-    register_nav_menus(
-        array(
-            'footer_menu' => __('Menu w stopce', 'akreawp'),
-        )
-    );
-}
-add_action('after_setup_theme', 'footer_menu_setup');
+// function footer_menu_setup()
+// {
+//     register_nav_menus(
+//         array(
+//             'footer_menu' => __('Menu w stopce', 'akreawp'),
+//         )
+//     );
+// }
+// add_action('after_setup_theme', 'footer_menu_setup');
 
 
 
@@ -223,23 +224,15 @@ function copyright()
 }
 
 /**
- * Use namespaced data attribute for Bootstrap's dropdown toggles.
- *
- * @param array    $atts HTML attributes applied to the item's `<a>` element.
- * @param WP_Post  $item The current menu item.
- * @param stdClass $args An object of wp_nav_menu() arguments.
- * @return array
+ * Register Custom Navigation Walker
  */
-function prefix_bs5_dropdown_data_attribute($atts, $item, $args)
+function register_navwalker()
 {
-    if (is_a($args->walker, 'WP_Bootstrap_Navwalker')) {
-        if (array_key_exists('data-toggle', $atts)) {
-            unset($atts['data-toggle']);
-            $atts['data-bs-toggle'] = 'dropdown';
-        }
-    }
-    return $atts;
+    require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
 }
+add_action('after_setup_theme', 'register_navwalker');
+
+
 
 // Register bootsteap pagination
 require_once('wp-bootstrap-pagination.php');

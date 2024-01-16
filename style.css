@@ -15,12 +15,18 @@ sans-serif;
 font-family: 'Source Serif 4',
 serif; */
 
-.col-md-4a {
-    width: 20% !important;
-}
-
 .nav-link:hover {
     font-weight: bold;
+}
+
+.breadcrumbs a {
+    color:#fff !important;
+}
+
+h1.noafter::after {
+    content: '';
+    border: none !important;
+    display:none;
 }
 
 .model {

@@ -2,11 +2,12 @@
 <html lang="pl">
 
 <head>
-<meta charset="utf-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1.0">
-    <?php wp_head();?>
+    <?php wp_head(); ?>
     <meta name="author" content="akrea creative agency www.akrea.pl">
-    <?php //include_once('inc/favicons.html'); ?>
+    <?php //include_once('inc/favicons.html'); 
+    ?>
     <link id="theme-link1" href="<?php echo get_template_directory_uri(); ?>/dist/css/bootstrap.css" rel="stylesheet">
     <link id="theme-link2" href="<?php echo get_template_directory_uri(); ?>/style.css" rel="stylesheet">
     <link href="<?php echo get_template_directory_uri(); ?>/css/cookieconsent.css" rel="stylesheet" />
@@ -37,7 +38,7 @@
                     <div class="offcanvas-body">
                         <?php
                         wp_nav_menu(array(
-                            'theme_location' => 'main_menu',
+                            'theme_location' => 'main',
                             'container' => false,
                             'menu_class' => 'text-primary',
                             'fallback_cb' => '__return_false',

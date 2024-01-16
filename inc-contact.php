@@ -8,7 +8,7 @@
         </div>
         <div class="col-md-6 col-sm-12 mt-5 mt-md-5 d-flex flex-column flex-md-row justify-content-around text-left text-primary">
             <form style="background-color: rgba(255,255,255,0.05);" class="row p-5 newsimg" enctype="multipart/form-data" method="post" ref="form" action="/dziekujemy-za-kontakt/">
-                <p class="fs-3">Wypełnij formularz - skontaktujemy się z Tobą</p>
+                <p class="fs-3">Wypełnij formularz<br />skontaktujemy się z Tobą</p>
                 <div class="col-md-12 mt-1">
                     <label for="clientname" class="form-label text-muted">Imię i nazwisko*</label>
                     <input name="clientname" type="text" class="form-control form-control-lg text-primary rounded-0" style="background:transparent; border:none; border-bottom:1px solid #002855;" required>

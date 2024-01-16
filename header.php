@@ -38,7 +38,7 @@
                     <div class="offcanvas-body">
                         <?php
                         wp_nav_menu(array(
-                            'theme_location' => '',
+                            'theme_location' => 'main',
                             'container' => false,
                             'menu_class' => 'text-primary',
                             'fallback_cb' => '__return_false',
