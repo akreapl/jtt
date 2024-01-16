@@ -6552,6 +6552,10 @@ h1:after, .h1:after, h2:after, .h2:after, h3:after, .h3:after, h4:after, .h4:aft
   width: 55%;
 }
 
+.dropdown-menu {
+  border: none;
+}
+
 a.nav-link {
   color: #fff;
 }
@@ -7252,7 +7256,7 @@ a.nav-link.active {
   display: none !important;
 }
 
-.shadow {
+.shadow, .dropdown-menu {
   box-shadow: var(--bs-box-shadow) !important;
 }
 
@@ -8053,7 +8057,7 @@ a.nav-link.active {
   padding-bottom: 0.25rem !important;
 }
 
-.py-2 {
+.py-2, .dropdown-item {
   padding-top: 0.5rem !important;
   padding-bottom: 0.5rem !important;
 }

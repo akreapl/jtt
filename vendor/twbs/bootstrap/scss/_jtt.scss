@@ -39,6 +39,15 @@ h1:after, h2:after, h3:after, h4:after, h5:after, h6:after {
 //   color: #fff;
 // }
 
+.dropdown-menu {
+  @extend .shadow;
+  border: none;
+}
+
+.dropdown-item {
+  @extend .py-2;
+}
+
 a.nav-link {
   color: $white;
   &:hover {
