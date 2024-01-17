@@ -21,11 +21,14 @@
 </head>
 
 <div class="bg-white">
-    <div class="top-menu fixed-top bg-white">
-        <nav class="navbar navbar-expand-md">
+    <div class="top-menu fixed-top bg-primary2">
+        <nav class="navbar navbar-dark navbar-expand-md">
             <div class="container">
-                <a class="navbar-brand" href="<?php echo esc_url(home_url('/')); ?>">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" style="width:220px; height:auto;" alt="<?php echo bloginfo(); ?>" class="img-fluid lazy" />
+                <a class="navbar-brand logo d-none d-md-block" href="<?php echo esc_url(home_url('/')); ?>">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/jtt-logo.png" style="width:100px; height:auto;" alt="<?php echo bloginfo(); ?>" class="img-fluid lazy" />
+                </a>
+                <a class="navbar-brand logo-min d-block d-md-none" href="<?php echo esc_url(home_url('/')); ?>">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/jtt-logo-min.png" style="width:90px; height:auto;" alt="<?php echo bloginfo(); ?>" class="img-fluid lazy" />
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Menu">
                     <span class="navbar-toggler-icon "></span>
@@ -40,16 +43,16 @@
                         wp_nav_menu(array(
                             'theme_location' => 'main',
                             'container' => false,
-                            'menu_class' => 'text-primary',
+                            'menu_class' => 'text-white',
                             'fallback_cb' => '__return_false',
                             'items_wrap' => '<ul id="%1$s" class="main-menu navbar-nav d-flex justify-content-end text-white flex-grow-1 pe-3 me-auto mb-2 mb-md-0 %2$s">%3$s</ul>',
                             'depth' => 2,
                             'walker' => new bootstrap_5_wp_nav_menu_walker()
                         ));
                         ?>
+                        <a class="text-white m-2 text-decoration-none border-1 border-white" href="tel:+48914331066">+48 91 433 10 66</a>
                     </div>
                 </div>
-            </div>
         </nav>
     </div>
 </div>

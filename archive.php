@@ -12,11 +12,11 @@ include_once('inc-page-header.php');
                 <?php while (have_posts()) : the_post(); ?>
 
                     <div class="col-md-4 col-sm-12 mb-4">
-                        <a href="<?php echo get_permalink($post->ID); ?>"><img src="<?php echo get_the_post_thumbnail_url($post->ID, 'full'); ?>" alt=" <?php get_the_title(); ?>" class="img-fluid rounded-5"></a>
+                        <a href="<?php echo get_permalink($post->ID); ?>"><img src="<?php echo get_the_post_thumbnail_url($post->ID, 'full'); ?>" alt=" <?php get_the_title(); ?>" class="img-fluid"></a>
                     </div>
 
                     <div class=" col-md-8 col-sm-12 mb-4">
-                        <?php the_title(sprintf('<h2 class="text-left"><a href="%s">', esc_url(get_permalink())), '</a></h2>'); ?>
+                        <?php the_title(sprintf('<h2 class="text-left noafter"><a href="%s">', esc_url(get_permalink())), '</a></h2>'); ?>
                         <div class="entry-content text-justify">
                             <?php the_excerpt(); ?>
                         </div>

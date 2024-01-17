@@ -23,7 +23,7 @@ if (!function_exists('akreawp_setup')) :
         add_theme_support('post-thumbnails');
         add_theme_support('title-tag');
         set_post_thumbnail_size(600, 600, true);
-
+        add_theme_support('post-thumbnails', array('post, page'));
         /*
      * Switch default core markup for search form, comment form, and comments
      * to output valid HTML5.
@@ -297,18 +297,17 @@ function shownews($catid, $numberofposts)
             global $post;
             echo "<div class=\"col-md-3 col-sm-12 d-flex\">"
                 . "<a href=\"" . get_permalink($post->ID) . "\" class=\"text-decoration-none\">"
-                . "<div class=\"news shadow-sm rounded-4 pb-1\">"
-                . "<div class=\"news-img rounded-4 overflow-hidden\">"
-                //. "<img src=\"$thumbnail\"  alt=\"" . get_the_title($post->ID) . "\" class=\"img-fluid lazy rounded-3\" />"
-                . get_the_post_thumbnail($post->ID, $size = 'thumbnail', ['class' => 'lazy rounded-3'])
+                . "<div class=\"news shadow-sm pb-1\">"
+                . "<div class=\"news-img overflow-hidden\">"
+                . get_the_post_thumbnail($post->ID, $size = 'thumbnail', ['class' => 'lazy'])
                 . "</a>"
                 . "</div>"
                 . "<div class=\"news-title mx-3\">"
                 . "<p class=\"fs-5 my-1\"><a href=\"" . get_permalink($post->ID) . "\" class=\"text-decoration-none\">" . get_the_title($post->ID) . "</a></p>"
                 . "</div>"
-                . "<div class=\"news-date text-muted mx-3 small\">"
-                . "<p class=\"my-0\">Data pub. " . get_the_time('m-d-Y', $post->ID) . "</p>"
-                . "</div>"
+                //. "<div class=\"news-date text-muted mx-3 small\">"
+                //. "<p class=\"my-0\">Data pub. " . get_the_time('m-d-Y', $post->ID) . "</p>"
+                //. "</div>"
                 . "<div class=\"news-excerpt mx-3 my-1 align-self-end\">"
                 . "<p class=\"news-excerpt-text text-black mt-1\">" . get_the_excerpt($post->ID) . "</p>"
                 . "</div>"
