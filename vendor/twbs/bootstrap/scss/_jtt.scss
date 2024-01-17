@@ -48,18 +48,6 @@ h1:after, h2:after, h3:after, h4:after, h5:after, h6:after {
   @extend .py-2;
 }
 
-a.nav-link {
-  color: $white;
-  &:hover {
-  font-weight: bold;
-  }
-}
-
-a.nav-link.active {
-  color: $white;
-  font-weight: bold;
-}
-
 .navbar-nav li {
   margin: 0px 10px 0px 10px;
 }

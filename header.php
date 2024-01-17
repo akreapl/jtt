@@ -43,14 +43,14 @@
                         wp_nav_menu(array(
                             'theme_location' => 'main',
                             'container' => false,
-                            'menu_class' => 'text-primary',
+                            'menu_class' => 'text-white',
                             'fallback_cb' => '__return_false',
                             'items_wrap' => '<ul id="%1$s" class="main-menu navbar-nav d-flex justify-content-end text-white flex-grow-1 pe-3 me-auto mb-2 mb-md-0 %2$s">%3$s</ul>',
                             'depth' => 2,
                             'walker' => new bootstrap_5_wp_nav_menu_walker()
                         ));
                         ?>
-                        <a class="text-white" href="tel:+48914331066">+48 91 433 10 66</a>
+                        <a class="text-white m-2 text-decoration-none border-1 border-white" href="tel:+48914331066">+48 91 433 10 66</a>
                     </div>
                 </div>
         </nav>

@@ -85,9 +85,33 @@ article h1::after, article h2::after, article h3::after, article h4::after, arti
     display:none;
 }
 
-.nav-link:hover {
-    font-weight: bold;
+a.nav-link {
+    color: #fff;}
+
+.menu-item {
+    position: relative;
 }
+
+.menu-item:hover:after {
+    content:'';
+    background:#f8f0e7;
+    height:2px;
+    width:100%;
+    position: absolute;
+    margin:0 auto;
+    bottom:0;
+    -webkit-animation: fadein 1s;
+        /* Safari, Chrome and Opera > 12.1 */
+        -moz-animation: fadein 1s;
+        /* Firefox < 16 */
+        -ms-animation: fadein 1s;
+        /* Internet Explorer */
+        -o-animation: fadein 1s;
+        /* Opera < 12.1 */
+        animation: fadein 1s;
+        opacity: 1;
+}
+
 
 .breadcrumbs a {
     color:#fff !important;
