@@ -1,4 +1,4 @@
-<?php /* Template Name: Strona zespołu */ ?>
+<?php /* Template Name: Strona o nas+zespół */ ?>
 
 <?php
 get_header('page');
@@ -10,7 +10,7 @@ include_once('inc-page-header.php');
 <div class="page-container">
     <div class="container">
         <div class="row pb-5 mb-3 d-flex justify-content-center">
-            <?php show_people(0,0); ?>
+            <?php show_people(0, 0); ?>
         </div>
     </div>
 </div>
