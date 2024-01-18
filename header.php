@@ -8,7 +8,7 @@
     <meta name="author" content="akrea creative agency www.akrea.pl">
     <?php //include_once('inc/favicons.html'); 
     ?>
-    <link id="theme-link1" href="<?php echo get_template_directory_uri(); ?>/dist/css/bootstrap.css" rel="stylesheet">
+    <link id="theme-link1" href="<?php echo get_template_directory_uri(); ?>/dist/css/bootstrap.min.css" rel="stylesheet">
     <link id="theme-link2" href="<?php echo get_template_directory_uri(); ?>/style.css" rel="stylesheet">
     <link href="<?php echo get_template_directory_uri(); ?>/css/cookieconsent.css" rel="stylesheet" />
     <meta name="theme-color" content="#000000">
@@ -50,7 +50,7 @@
                             'walker' => new bootstrap_5_wp_nav_menu_walker()
                         ));
                         ?>
-                        <a class="text-white m-2 text-decoration-none border-1 border-white" href="tel:+48914331066">+48 91 433 10 66</a>
+                        <a class="text-white text-decoration-none border-white p-2" style="border:1px solid #fff" href="tel:+48914331066">+48 91 433 10 66</a>
                     </div>
                 </div>
         </nav>
