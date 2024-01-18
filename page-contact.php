@@ -10,7 +10,7 @@ include_once('inc-page-header.php');
 <div class="page-container">
     <div class="container">
         <div class="row">
-            <div class="col-12 pt-3 text-justify pb-5 mb-3">
+            <div class="col-12 pt-3 text-justify pb-5 mb-3" style="text-align: justify;">
                 <article>
                     <?php
                     // Start the loop.

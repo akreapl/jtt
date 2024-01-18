@@ -466,7 +466,7 @@ function show_people($page_id, $numberofpages)
             setup_postdata($mypage);
             $thumbnailid = get_post_thumbnail_id($mypage->ID);
             $thumbnailurl = wp_get_attachment_url($thumbnailid);
-            $defaultthumbnail = get_template_directory_uri() . '/img/logo.svg';
+            $defaultthumbnail = get_template_directory_uri() . '/img/logo.png';
             $thumbnailalt = get_post_meta($thumbnailid, '_wp_attachment_image_alt', TRUE);
             if ($thumbnailurl != '') {
                 $thumbnailurl;
@@ -475,12 +475,22 @@ function show_people($page_id, $numberofpages)
             }
 
             $personfunction = get_post_meta($mypage->ID, 'function', true);
-            $personemail = get_post_meta($mypage->ID, 'email', true);
+            //$personemail = get_post_meta($mypage->ID, 'email', true);
 
-            echo "<div class=\"col-md-4 col-sm-12\">"
-                . "<a href=\"" . get_permalink($mypage->ID) . "\"><img src=\"" . $thumbnailurl . "\" alt=\"" . $thumbnailalt . "\" class=\"img-fluid lazy\" /></a>"
-                . "<p class=\"pt-3 fs-4 text-primary\">" . $personfunction . "</p>"
-                . "<p class=\"pt-3 fs-4 text-black\">" . $personemail . "</p>"
+            echo
+
+            "<div class=\"col-md-4 col-sm-12 mt-0 mb-5\">"
+                . "<a href=\"" . get_permalink($mypage->ID) . "\" class=\"d-flex justify-content-center lawyer\">"
+                . "<div class=\"lawyer overflow-hidden d-flex justify-content-center align-items-center\">"
+                . "<div class=\"position-relative\">"
+                . "<img src=\"" . $thumbnailurl . "\" alt=\"" . $thumbnailalt . "\" class=\"img-fluid lazy\" />"
+                . "<div class=\"lawyer-description position-absolute px-5\">"
+                . "<p class=\"h3 mt-4\">" . get_the_title($mypage->ID) . "</p>"
+                . "<p>" . $personfunction . "</p>"
+                . "</div>"
+                . "</div>"
+                . "</div>"
+                . "</a>"
                 . "</div>";
             $i++;
         }

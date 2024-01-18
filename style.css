@@ -229,3 +229,7 @@ a:hover .query-form {
     transition: all 400ms ease-out; 
      /* cubic-bezier(.54, 1.58, .67, .92); */
 }
+
+.person-border {
+    border: 5px solid #d7af7d;
+}

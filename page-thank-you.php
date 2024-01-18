@@ -8,7 +8,7 @@ include_once('inc-page-header.php'); ?>
 
 <div class="container">
     <div class="row">
-        <div class="col-12">
+        <div class="col-12" style="text-align: justify;">
             <?php the_content();
             ?>
             <?php
