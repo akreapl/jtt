@@ -299,7 +299,7 @@ function shownews($catid, $numberofposts)
                 . "<a href=\"" . get_permalink($post->ID) . "\" class=\"text-decoration-none\">"
                 . "<div class=\"news shadow-sm pb-1\">"
                 . "<div class=\"news-img overflow-hidden\">"
-                . get_the_post_thumbnail($post->ID, $size = 'thumbnail', ['class' => 'lazy'])
+                . get_the_post_thumbnail($post->ID, $size = 'post-thumbnail', ['class' => 'img-fluid lazy'])
                 . "</a>"
                 . "</div>"
                 . "<div class=\"news-title mx-3\">"
