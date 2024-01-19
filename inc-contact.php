@@ -1,7 +1,7 @@
 <div class="container pt-1">
     <div class="row">
         <div class="mt-5 d-flex justify-content-center">
-            <h1 class="mt-5">Zacznij <span class="text-primary">współpracę</span></h1>
+            <h1 class="mt-5">Zacznij <span class="text-primary fw-bolder fst-italic">współpracę</span></h1>
         </div>
         <div class="col-md-5 col-sm-12 mt-5 mt-md-5 d-flex flex-row justify-content-start align-items-end overflow-hidden">
             <img src="<?php echo get_template_directory_uri(); ?>/img/mj.png" class="img-fluid" />

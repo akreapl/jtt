@@ -2,7 +2,7 @@
     <div class="container py-5">
         <div class="row gx-4 d-flex justify-content-center models align-content-around align-items-center">
             <div class="col-12 mt-5 mt-md-0 d-flex justify-content-center">
-                <h1>W czym się <span class="text-primary">specjalizujemy</span></h1>
+                <h1>W czym się <span class="text-primary fw-bolder fst-italic">specjalizujemy</span></h1>
             </div>
         </div>
     </div>

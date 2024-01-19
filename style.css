@@ -117,11 +117,13 @@ a.nav-link {
     color:#fff !important;
 }
 
-h1.noafter::after {
+h1.noafter::after, h2.noafter::after, h3.noafter::after, h4.noafter::after, h5.noafter::after, h6.noafter::after {
     content: '';
     border: none !important;
     display:none;
 }
+
+h1 span, h2 span {font-style: italic;}
 
 .model {
     border: 5px solid transparent;

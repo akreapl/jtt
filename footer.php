@@ -1,18 +1,16 @@
 <?php
 /* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * stopka motywu
  */
 ?>
 
 <footer class="pt-5 pb-3 text-white" style="font-size:.85rem !important; background:#531e1e;">
     <div class="container">
         <div class="row">
-            <div class="col-md-2 col-sm-12 mb-sm-0 mb-4 text-center text-md-left">
-                <img class="img-fluid footerlogo" src="<?php echo get_template_directory_uri(); ?>/img/jtt-logo.png" alt="Kancelaria Prawna JTT Szczecin">
+            <div class="col-md-2 col-sm-12 mb-sm-0 mb-4 text-center text-md-start d-none d-md-block">
+                <img class="img-fluid footerlogo" style="width:80vw;" src="<?php echo get_template_directory_uri(); ?>/img/jtt-logo.png" alt="Kancelaria Prawna JTT Szczecin">
             </div>
-            <div class="col-md-2 col-sm-12 mb-sm-0 mb-4 text-left">
+            <div class="col-md-2 col-sm-12 mb-sm-0 mb-4 text-left text-sm-center  d-none d-md-block">
                 <?php
                 // if (is_active_sidebar('widget-footer-2')) {
                 //     dynamic_sidebar('widget-footer-2');
@@ -21,14 +19,14 @@
 
             </div>
 
-            <div class="col-md-2 col-sm-12 mb-sm-0 mb-4 text-left">
+            <div class="col-md-2 col-sm-12 text-center text-md-start d-none d-md-block">
                 <?php
                 // if (is_active_sidebar('widget-footer-3')) {
                 //     dynamic_sidebar('widget-footer-3');
                 // }
                 ?>
 
-                <h5 class="">Menu </h5>
+                <h5 class="noafter">Menu </h5>
                 <p>
                     Strona główna<br />
                     Kontakt<br />
@@ -36,13 +34,13 @@
                 </p>
             </div>
 
-            <div class="col-md-3 col-sm-12">
+            <div class="col-md-3 col-sm-12 text-center text-md-start">
                 <?php
                 // if (is_active_sidebar('widget-footer-5')) {
                 //     dynamic_sidebar('widget-footer-5');
                 // }
                 ?>
-                <h5 class="">Kontakt</h5>
+                <h5 class="noafter">Kontakt</h5>
                 <p>
                     <svg fill="#fff" style="width:20px; height: auto; margin-right:8px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                         <path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z" />
@@ -63,8 +61,8 @@
                 </a>
             </div>
 
-            <div class="col-md-3 col-sm-12">
-                <h5 class="">Adres</h5>
+            <div class="col-md-3 col-sm-12 text-center text-md-start">
+                <h5 class="noafter">Adres</h5>
                 Kancelaria Radców Prawnych Jagiełło Tobolewski<br />
                 Aleja Papieża Jana Pawła II 28/3<br />
                 70-454 Szczecin
@@ -74,9 +72,9 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-12 text-center mt-4">
+            <div class="col-12 text-center mt-4 d-flex">
                 <span class="copyright text-small"><?php copyright(); ?>, all rights reserved.</span>
-                <p class="d-flex justify-content-end p-3">designed by <a class="text-white text-small text-decoration-none ms-1" href="https://akrea.pl">akrea.pl</a></p>
+                <span class="d-flex justify-content-end p-0 m-0">designed by <a class="text-white text-small text-decoration-none ms-1" href="https://akrea.pl">akrea.pl</a></span>
             </div>
         </div>
         <div id="scrolltop">
