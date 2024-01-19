@@ -237,3 +237,10 @@ a:hover .query-form {
 .person-border {
     border: 5px solid #d7af7d;
 }
+
+.menu-margin {
+    margin-top: 121px;
+    @media (max-width: 768px) {
+            margin-top: 83px;
+        }
+}

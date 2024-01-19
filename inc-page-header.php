@@ -1,4 +1,4 @@
-<div class="container-fluid py-3 bg-primary" style="margin-top:121px;">
+<div class="container-fluid py-3 bg-primary menu-margin">
     <div class="container">
         <div class="row d-flex justify-content-between align-items-center align-content-around">
             <div class="col-12 d-flex align-items-center">
