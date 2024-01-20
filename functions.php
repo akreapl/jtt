@@ -496,3 +496,35 @@ function show_people($page_id, $numberofpages)
         }
     }
 }
+
+function generate_years($min)
+{
+    $min = $min;
+    $max = date('Y');
+    $i = $min;
+    for ($i >= $min; $i <= $max; $i++) {
+        echo "<option value=" . $i . ">" . $i . "</option>";
+    }
+}
+
+function generate_months()
+{
+    $miesiace = array(
+        "Styczeń",
+        "Luty",
+        "Marzec",
+        "Kwiecień",
+        "Maj",
+        "Czerwiec",
+        "Lipiec",
+        "Sierpień",
+        "Wrzesień",
+        "Październik",
+        "Listopad",
+        "Grudzień"
+    );
+
+    foreach ($miesiace as $miesiac) {
+        echo "<option value=" . $miesiac . ">" . $miesiac . "</option>";
+    }
+}
