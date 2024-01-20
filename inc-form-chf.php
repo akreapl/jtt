@@ -47,7 +47,7 @@
             <label for="credit-amount" class="form-label">Kwota kredytu</label>
             <div class="input-group">
                 <input type="number" pattern="\{d}" class="form-control" id="credit-amount" name="credit-amount" aria-label="Kwota kredytu" aria-describedby="Kwota kredytu">
-                <span class="input-group-text" id="credit-amount">PLN</span>
+                <span class="input-group-text" id="credit-amount">CHF</span>
                 <input type="text" class="d-none" id="currency" name="currency" value="PLN">
             </div>
         </div>
@@ -80,13 +80,13 @@
         </div>
 
         <div class="mb-3">
-            <label for="reference-type" class="form-label">Rodzaj WIBOR</label>
+            <label for="reference-type" class="form-label">Rodzaj LIBOR</label>
             <input class="form-control" list="wibor-list" id="reference-type" name="reference-type" placeholder="Podaj rodzaj WIBOR">
             <datalist id="wibor-list">
-                <option value="WIBOR 1M">WIBOR 1M</option>
-                <option value="WIBOR 3M">WIBOR 3M</option>
-                <option value="WIBOR 6M">WIBOR 6M</option>
-                <option value="WIBOR 12M">WIBOR 12M</option>
+                <option value="LIBOR 1M">LIBOR 1M</option>
+                <option value="LIBOR 3M">LIBOR 3M</option>
+                <option value="LIBOR 6M">LIBOR 6M</option>
+                <option value="LIBOR 12M">LIBOR 12M</option>
             </datalist>
         </div>
 

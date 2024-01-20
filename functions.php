@@ -428,34 +428,64 @@ class bootstrap_5_wp_nav_menu_walker extends Walker_Nav_menu
 
 function makeemail()
 {
-    $contactdate      = date("Y-m-d H:i:s");
-    $clientname     = filter_input(INPUT_POST, 'clientname');
-    $email          = filter_input(INPUT_POST, 'email');
-    $phone          = filter_input(INPUT_POST, 'phone');
-    $city           = filter_input(INPUT_POST, 'city');
-    $acceptance     = filter_input(INPUT_POST, 'acceptance');
-    $acceptancedict = "NIE";
-    if ($acceptance == "on") {
-        $acceptancedict = "TAK";
+    $emaildate      = date("Y-m-d H:i:s");
+    $bank =  filter_input(INPUT_POST, 'bank');
+    $year =  filter_input(INPUT_POST, 'year');
+    $month =  filter_input(INPUT_POST, 'month');
+    $creditamount =  filter_input(INPUT_POST, 'credit-amount');
+    $currency =  filter_input(INPUT_POST, 'currency');
+    $creditinstallment =  filter_input(INPUT_POST, 'credit-installment');
+    $creditmarginyes =  filter_input(INPUT_POST, 'credit-margin-yes');
+    $creditmarginno =  filter_input(INPUT_POST, 'credit-margin-no');
+    $creditmarginvalue =  filter_input(INPUT_POST, 'credit-margin-value');
+    $referencetype =  filter_input(INPUT_POST, 'reference-type');
+    $clientname =  filter_input(INPUT_POST, 'clientname');
+    $email = filter_input(INPUT_POST, 'email');
+    $phone = filter_input(INPUT_POST, 'phone');
+    $consent = filter_input(INPUT_POST, 'consent');
+    $consentdict = "NIE";
+    if ($consent == "on") {
+        $consentdict = "TAK";
     }
 
-    $message        =  '<p style="font-size:12px;">Data kontaktu: <b>' . $contactdate . '</b>' .
-        '<br />Imię: <b>' . $clientname . '</b>' .
-        '<br />Telefon: <b>' . $phone . '</b>' .
+    $message        =  '<p style="font-size:1.1em;">Data zapytania: <b>' . $emaildate . '</b>' .
+        '<br />Imię i nazwisko: <b>' . $clientname . '</b>' .
         '<br />Email: <b>' . $email . '</b>' .
-        '<br />Miejscowość: <b>' . $city . '</b>' .
-        '<br />Akceptacja regulaminu i polityki prywatności: <b>' . $acceptancedict . '</b>';
+        '<br />Telefon: <b>' . $phone . '</b><br /><br />' .
+        '<br />Bank: <b>' . $bank . '</b>' .
+        '<br />Data zaciągnięcia kredytu (miesiąc-rok): <b>' . $month . '-' . $year . '</b>' .
+        '<br />Wysokość kredytu: <b>' . $creditamount . '</b>' .
+        '<br />Waluta kredytu: <b>' . $currency . '</b>' .
+        '<br />Ilość rat: <b>' . $creditinstallment . '</b>' .
+        '<br />Marża znana: <b>' . $creditmarginyes . '</b>' .
+        '<br />Marża nieznana: <b>' . $creditmarginno . '</b>' .
+        '<br />Wysokość marży: <b>' . $creditmarginvalue . '</b>' .
+        '<br />Rodzaj referencyjnej wysokości oprocentowania: <b>' . $referencetype . '</b>' .
+        '<br />Akceptacja Polityki Prywatnośći: <b>' . $consentdict . '</b>';
 
-    $to             = "info@akrea.pl,";
-    $from           = "noreply@akrea.pl";
-    $subject        = 'Kontakt ze strony viviamo.pl';
+    $clientmessage = '<b>Szanowny Kliencie,</b><br /><br />
+                        Kancelaria JTT potwierdza otrzymanie Państwa zapytania. 
+                        <br /><br />
+                        Informujemy, że nasi prawnicy przeanalizują zgłoszenie i skontaktują się z Państwem najpóźniej w ciągu 2 dni roboczych.
+                        <br /><br /><br /><br />
+                        Z poważaniem<br />
+                        Kancelaria JTT<br /><br /><hr />
+                        <b>SZCZEGÓŁY ZAPYTANIA:</b><br />' . $message;
+
+    $to             = "info@akrea.pl";
+    $from           = "no-reply@jtt.akrea.pl";
+    $subject        = 'TEST Zapytanie od ' . $clientname;
+    $subject2       = 'TEST Potwierdzenie otrzymania zapytania | Kancelaria JTT';
 
     $headers        = 'MIME-Version: 1.0' . "\r\n";
     $headers        .= 'Content-type: text/html; charset=utf-8' . "\r\n";
+
     $headers        .= 'From: ' . $from . "\r\n";
 
     mail($to, $subject, $message, $headers);
+    mail($email, $subject2, $clientmessage, $headers);
 }
+
 
 function show_people($page_id, $numberofpages)
 {
