@@ -107,7 +107,7 @@
         </div>
 
         <div class="form-check mb-3">
-            <input class="form-check-input" type="checkbox" value="" id="consent" required style="border-color: rgba(0,0,0, 0.45);">
+            <input class="form-check-input" type="checkbox" name="consent" id="consent" required style="border-color: rgba(0,0,0, 0.45);">
             <label class="form-check-label" for="consent">
                 *Akceptuję <a class="text-primary" href="polityka-prywatnosci">Politykę prywatności</a>
             </label>

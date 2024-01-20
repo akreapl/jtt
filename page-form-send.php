@@ -1,4 +1,4 @@
-<?php /* Template Name: Strona po wysyłce formularza */ ?>
+<?php /* Template Name: Strona po wysyłce formularza OK */ ?>
 
 <?php
 get_header();
@@ -11,16 +11,18 @@ include_once('inc-page-header.php');
     <div class="row">
         <div class="col-12 py-3" style="text-align: justify;">
             <article>
+                <h2>TEST</h2>
                 <?php
                 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-                    $consent     = filter_input(INPUT_POST, 'consent');
-                    echo "ZGODA: " . $consent;
+                    $consent  = filter_input(INPUT_POST, 'consent');
+                    var_dump($consent);
+                    echo "<h1>ZGODA: " . $consent . "</h1>";
                     if (
                         $consent == "on"
                     ) {
                         makeemail();
                     } else {
-                        echo "<p class=\"text-danger text-center\">Zaakceptuj politykę prywatności!<br /> Wiadomość NIE ZOSTAŁA WYSŁANA.</p>";
+                        echo "<p class=\"text-danger text-center py-5\">Zaakceptuj politykę prywatności!<br /> Wiadomość NIE ZOSTAŁA WYSŁANA.</p>";
                     }
                 }
                 // Start the loop.
@@ -34,6 +36,5 @@ include_once('inc-page-header.php');
         </div>
     </div>
 </div>
-
 
 <?php get_footer(); ?>

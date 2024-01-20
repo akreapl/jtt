@@ -430,7 +430,7 @@ function makeemail()
 {
     $emaildate      = date("Y-m-d H:i:s");
     $bank =  filter_input(INPUT_POST, 'bank');
-    $year =  filter_input(INPUT_POST, 'year');
+    $credityear =  filter_input(INPUT_POST, 'credit-year');
     $month =  filter_input(INPUT_POST, 'month');
     $creditamount =  filter_input(INPUT_POST, 'credit-amount');
     $currency =  filter_input(INPUT_POST, 'currency');
@@ -448,12 +448,12 @@ function makeemail()
         $consentdict = "TAK";
     }
 
-    $message        =  '<p style="font-size:1.1em;">Data zapytania: <b>' . $emaildate . '</b>' .
+    $message        =  '<p style="font-size:1.3em;">Data zapytania: <b>' . $emaildate . '</b>' .
         '<br />Imię i nazwisko: <b>' . $clientname . '</b>' .
         '<br />Email: <b>' . $email . '</b>' .
         '<br />Telefon: <b>' . $phone . '</b><br /><br />' .
         '<br />Bank: <b>' . $bank . '</b>' .
-        '<br />Data zaciągnięcia kredytu (miesiąc-rok): <b>' . $month . '-' . $year . '</b>' .
+        '<br />Data zaciągnięcia kredytu (miesiąc-rok): <b>' . $month . '-' . $credityear . '</b>' .
         '<br />Wysokość kredytu: <b>' . $creditamount . '</b>' .
         '<br />Waluta kredytu: <b>' . $currency . '</b>' .
         '<br />Ilość rat: <b>' . $creditinstallment . '</b>' .
