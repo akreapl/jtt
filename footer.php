@@ -26,10 +26,9 @@
                 // }
                 ?>
 
-                <h5 class="noafter">Menu </h5>
+                <h5 class="noafter">Ważne </h5>
                 <p>
-                    Strona główna<br />
-                    Kontakt<br />
+
                     <a class="text-decoration-none text-white" href="<?php echo esc_url(home_url('/')); ?>polityka-prywatnosci">Polityka prywatności</a>
                 </p>
             </div>

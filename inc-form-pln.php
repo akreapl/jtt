@@ -1,5 +1,5 @@
 <div class="col-md-5 col-sm-12 d-flex flex-column justify-content-center align-content-center pb-4">
-    <form enctype="multipart/form-data" action="<?php echo esc_url(home_url('/')); ?>formularze/formularz-kredytowy-potwierdzenie/" method="post">
+    <form enctype="multipart/form-data" action="<?php echo esc_url(home_url('/')); ?>formularz-kredytowy-potwierdzenie/" method="post">
         <div class="mb-4">
             <label for="bank" class="form-label">Bank, który udzielał kredytu</label>
             <input class="form-control" list="bank-list" name="bank" id="bank" placeholder="Wpisz nazwę banku">
@@ -31,7 +31,7 @@
         <div class="mb-4">
             <label for="credit-amount" class="form-label">Kwota kredytu</label>
             <div class="input-group">
-                <input type="number" pattern="\{d}" class="form-control" id="credit-amount" name="credit-amount" aria-label="Kwota kredytu" aria-describedby="Kwota kredytu">
+                <input type="number" pattern="\{d}" min="1000" class="form-control" id="credit-amount" name="credit-amount" aria-label="Kwota kredytu" aria-describedby="Kwota kredytu">
                 <span class="input-group-text" id="credit-amount">PLN</span>
                 <input type="text" class="d-none" name="currency" id="currency" value="PLN">
             </div>
@@ -40,32 +40,32 @@
         <div class="mb-4">
             <label for="credit-installment" class="form-label">Ilość rat kredytu</label>
             <div class="input-group">
-                <input type="number" pattern="\{d}" class="form-control" name="credit-installment" id="credit-installment" aria-label="Ilość rat kredytu" aria-describedby="Ilość rat kredytu">
-                <span class="input-group-text">RAT</span>
+                <input type="number" pattern="\{d}" min="1" class="form-control" name="credit-installment" id="credit-installment" aria-label="Ilość rat kredytu" aria-describedby="Ilość rat kredytu">
+                <span class="input-group-text">rat</span>
             </div>
         </div>
 
         <div class="mb-4">
             <label for="credit-margin-yes-no" class="form-label">Czy znasz wysokość marży kredytu</label>
             <div class="input-group">
-                <input type="radio" class="btn-check" name="credit-margin-yes" id="credit-margin-yes" autocomplete="off">
-                <label class="btn btn-outline-primary mx-2" for="credit-margin-yes">TAK</label>
+                <input type="radio" class="btn-check" name="credit-margin-yes" id="credit-margin-yes" autocomplete="off" checked>
+                <label class="btn btn-outline-primary me-2" for="credit-margin-yes">TAK</label>
 
                 <input type="radio" class="btn-check" name="credit-margin-no" id="credit-margin-no" autocomplete="off">
-                <label class="btn btn-outline-primary mx-2" for="credit-margin-no">NIE</label>
+                <label class="btn btn-outline-primary ms-2" for="credit-margin-no">NIE</label>
             </div>
         </div>
 
         <div class="mb-4">
-            <label for="credit-margin-value" class="form-label">Wysokość marży (w %)</label>
+            <label for="credit-margin-value" class="form-label">Wysokość marży (w %), np. 1.25</label>
             <div class="input-group">
-                <input type="number" pattern="^[0-9]*\.[0-9]{2}$" class="form-control" name="credit-margin-value" id="credit-margin-value" aria-label="Wysokość marży" aria-describedby="Wysokość marży">
+                <input type="number" pattern="^[0-9]*\.[0-9]{2}$" min="0.01" step="0.01" class="form-control" name="credit-margin-value" id="credit-margin-value" aria-label="Wysokość marży" aria-describedby="Wysokość marży">
                 <span class="input-group-text">%</span>
             </div>
         </div>
 
         <div class="mb-4">
-            <label for="reference-type" class="form-label">Rodzaj WIBOR</label>
+            <label for="reference-type" class="form-label">Rodzaj WIBOR, np. WIBOR 3M</label>
             <input class="form-control" list="wibor-list" name="reference-type" id="reference-type" placeholder="Podaj rodzaj WIBOR">
             <datalist id="wibor-list">
                 <option value="WIBOR 1M">WIBOR 1M</option>
@@ -96,7 +96,7 @@
             <label class="form-check-label" for="consent">
                 *Akceptuję <a class="text-primary" href="<?php echo esc_url(home_url('/')); ?>polityka-prywatnosci">Politykę prywatności</a>
             </label>
-            <p class="small text-muted py-2">* Pola wyamgane</p>
+            <p class="small text-muted py-2">* Pola wymagane</p>
         </div>
 
         <button type="submit" class="btn btn-primary">

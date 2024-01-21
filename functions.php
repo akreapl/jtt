@@ -151,6 +151,7 @@ function mainmenu_setup()
     register_nav_menus(
         array(
             'main' => __('Główne menu', 'akreawp'),
+            'footer' => __('Menu w stopce', 'akreawp'),
         )
     );
 }
@@ -607,6 +608,51 @@ function makeemail_health()
     mail($email, $subject2, $clientmessage, $headers);
 }
 
+function makeemail_shortform()
+{
+    $emaildate      = date("Y-m-d H:i:s");
+
+    $clientname =  filter_input(INPUT_POST, 'clientname');
+    $email = filter_input(INPUT_POST, 'email');
+    $phone = filter_input(INPUT_POST, 'phone');
+    $info = filter_input(INPUT_POST, 'info');
+    $consent = filter_input(INPUT_POST, 'consent');
+    $consentdict = "NIE";
+    if ($consent == "on") {
+        $consentdict = "TAK";
+    }
+
+    $message        =  '<p style="font-size:1.3em;">Data zapytania: <b>' . $emaildate . '</b>' .
+        '<br />Imię i nazwisko: <b>' . $clientname . '</b>' .
+        '<br />Email: <b>' . $email . '</b>' .
+        '<br />Telefon: <b>' . $phone . '</b><br /><br />' .
+        '<br />Wiadmość: <b><br />' . $info . '</b><br />' .
+        '<br />Akceptacja Polityki Prywatnośći: <b>' . $consentdict . '</b>';
+
+    $clientmessage = '<b>Szanowny Kliencie,</b><br /><br />
+                        Kancelaria JTT potwierdza otrzymanie Państwa zapytania. 
+                        <br /><br />
+                        Informujemy, że nasi prawnicy przeanalizują zgłoszenie i skontaktują się z Państwem najpóźniej w ciągu 2 dni roboczych.
+                        <br /><br /><br /><br />
+                        Z poważaniem<br />
+                        Kancelaria JTT<br /><br /><hr />
+                        <b>SZCZEGÓŁY ZAPYTANIA:</b><br />' . $message;
+
+    $to             = "info@akrea.pl";
+    $from           = "no-reply@jtt.akrea.pl";
+    $subject        = 'TEST Zapytanie od ' . $clientname;
+    $subject2       = 'TEST Potwierdzenie otrzymania zapytania | Kancelaria JTT';
+
+    $headers        = 'MIME-Version: 1.0' . "\r\n";
+    $headers        .= 'Content-type: text/html; charset=utf-8' . "\r\n";
+
+    $headers        .= 'From: ' . $from . "\r\n";
+
+    mail($to, $subject, $message, $headers);
+    mail($email, $subject2, $clientmessage, $headers);
+}
+
+
 function show_people($page_id, $numberofpages)
 {
     $mypages = get_pages(array('child_of' => $page_id, 'parent' => $page_id, 'number' => $numberofpages, 'posts_per_page' => $numberofpages, 'sort_column' => 'menu_order', 'sort_order' => 'ASC'));
@@ -676,5 +722,38 @@ function generate_months()
 
     foreach ($miesiace as $miesiac) {
         echo "<option value=" . $miesiac . ">" . $miesiac . "</option>";
+    }
+}
+
+
+function show_forms()
+{
+    $mypage = get_page_by_title('Formularze');
+
+    $my_query = new WP_Query(array('post_type' => 'page', 'post_parent' =>  $mypage->ID, 'order' => 'asc', 'orderby' => 'menu_order', 'posts_per_page' => 4));
+
+    $items = $my_query->found_posts;
+
+    if ($items >= 3 || $items < 2) {
+        $col = 3;
+    } else {
+        $col = 6;
+    }
+
+    if ($my_query->have_posts()) {
+        while ($my_query->have_posts()) {
+            $my_query->the_post();
+            global $post;
+            $thumbnailurl = wp_get_attachment_url(get_post_thumbnail_id($post->ID));
+            $imgalt = get_post_meta(get_post_thumbnail_id($post->ID), '_wp_attachment_image_alt', true);
+
+            echo "<div class=\"mb-4 col-sm-12 col-md-" . $col . "\">"
+                . "<a href=\"" . get_permalink($post->ID) . "\" class=\"text-decoration-none\">"
+                . "<div class=\"query-form d-flex flex-column align-items-center justify-content-center text-center p-5\">"
+                . get_the_title($post->ID)
+                . "</div>"
+                . "</a>"
+                . "</div>";
+        }
     }
 }

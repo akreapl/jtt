@@ -1,9 +1,18 @@
-<div class="d-flex align-content-center">
-    <div class="container py-sm-2 py-md-5">
-        <div class="row gx-4 d-flex justify-content-center models align-content-around align-items-center">
-            <div class="col-12 mt-5 mt-md-0 d-flex justify-content-center">
-                <h1>W czym się <span class="text-primary fw-bolder fst-italic">specjalizujemy</span></h1>
-            </div>
+<?php /* Template Name: Strona filary */ ?>
+
+<?php
+get_header('page');
+?>
+<?php
+include_once('inc-page-header.php');
+?>
+
+<div class="page-container">
+    <div class="container">
+        <div class="row pb-5 mb-3 d-flex justify-content-center" style="text-align:justify;">
+            <?php
+            the_content();
+            ?>
         </div>
     </div>
 </div>
@@ -97,3 +106,5 @@
         </div>
     </div>
 </div>
+
+<?php get_footer(); ?>

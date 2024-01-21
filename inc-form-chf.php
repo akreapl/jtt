@@ -1,5 +1,5 @@
 <div class="col-md-5 col-sm-12 d-flex flex-column justify-content-center align-content-center pb-4">
-    <form enctype="multipart/form-data" action="<?php echo esc_url(home_url('/')); ?>formularze/formularz-kredytowy-potwierdzenie/" method="post">
+    <form enctype="multipart/form-data" action="<?php echo esc_url(home_url('/')); ?>formularz-kredytowy-potwierdzenie/" method="post">
         <div class="mb-4">
             <label for="bank" class="form-label">Bank, który udzielał kredytu</label>
             <input class="form-control" list="bank-list" name="bank" id="bank" placeholder="Wpisz nazwę banku">
@@ -96,7 +96,7 @@
             <label class="form-check-label" for="consent">
                 *Akceptuję <a class="text-primary" href="<?php echo esc_url(home_url('/')); ?>polityka-prywatnosci">Politykę prywatności</a>
             </label>
-            <p class="small text-muted py-2">* Pola wyamgane</p>
+            <p class="small text-muted py-2">* Pola wymagane</p>
         </div>
 
         <button type="submit" class="btn btn-primary">
