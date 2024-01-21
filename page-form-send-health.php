@@ -1,4 +1,4 @@
-<?php /* Template Name: Strona po wysyłce formularza OK */ ?>
+<?php /* Template Name: Strona po wysyłce formularza za uszczerbek */ ?>
 
 <?php
 get_header();
@@ -9,28 +9,24 @@ include_once('inc-page-header.php');
 
 <div class="container">
     <div class="row">
-        <div class="col-12 py-3" style="text-align: justify;">
+        <div class="col-12" style="text-align: justify;">
             <article>
-                <h2>TEST</h2>
                 <?php
                 if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     $consent  = filter_input(INPUT_POST, 'consent');
-                    var_dump($consent);
-                    echo "<h1>ZGODA: " . $consent . "</h1>";
                     if (
                         $consent == "on"
                     ) {
-                        makeemail();
+                        makeemail_health();
+                        while (have_posts()) : the_post();
+                            // Include the single post content template.
+                            the_content();
+                        // End of the loop.
+                        endwhile;
                     } else {
                         echo "<p class=\"text-danger text-center py-5\">Zaakceptuj politykę prywatności!<br /> Wiadomość NIE ZOSTAŁA WYSŁANA.</p>";
                     }
                 }
-                // Start the loop.
-                while (have_posts()) : the_post();
-                    // Include the single post content template.
-                    the_content();
-                // End of the loop.
-                endwhile;
                 ?>
             </article>
         </div>

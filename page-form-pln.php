@@ -10,7 +10,7 @@ include_once('inc-page-header.php');
 
 <div class="container">
     <div class="row">
-        <div class="col-12 py-3" style="text-align: justify;">
+        <div class="col-12" style="text-align: justify;">
             <article>
                 <?php
                 // Start the loop.

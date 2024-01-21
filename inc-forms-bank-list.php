@@ -1,0 +1,16 @@
+<option value="mBank S.A. (następca prawny BRE Bank S.A., Multibank S.A.)">mBank S.A. (następca prawny BRE Bank S.A., Multibank S.A.)</option>
+<option value="Bank Millennium S.A. (następca prawny Eurobank S.A.)">Bank Millennium S.A. (następca prawny Eurobank S.A.)</option>
+<option value="Bank BPH S.A. (następca prawny GE Money Bank S.A.)">Bank BPH S.A. (następca prawny GE Money Bank S.A.)</option>
+<option value="Raiffeisen International AG (następca prawny Raiffeisen Bank Polska S.A., EFG Eurobank  Ergasias S.A. występujący także pod marką Polbank)">Raiffeisen International AG (następca prawny Raiffeisen Bank Polska S.A., EFG Eurobank Ergasias S.A. występujący także pod marką Polbank)</option>
+<option value="Getin Noble Bank S.A.(następca prawny Getin Bank S.A., Metrobank S.A., DomBank S.A.)">Getin Noble Bank S.A.(następca prawny Getin Bank S.A., Metrobank S.A., DomBank S.A.)</option>
+<option value="Santander Consumer Bank S.A (następca prawny PTF Bank S.A.)">Santander Consumer Bank S.A (następca prawny PTF Bank S.A.)</option>
+<option value="Santander Bank Polska S.A (następca prawny Kredyt Bank S.A., BZWBK S.A.)">Santander Bank Polska S.A (następca prawny Kredyt Bank S.A., BZWBK S.A.)</option>
+<option value="ING Bank Śląski S.A.">ING Bank Śląski S.A.</option>
+<option value="PKO BP S.A. (następca prawny Nordea Bank Polska S.A.)">PKO BP S.A. (następca prawny Nordea Bank Polska S.A.)</option>
+<option value="Pekao S.A.(następca prawny części kredytów zawartych z Bankiem BPH S.A.)">Pekao S.A.(następca prawny części kredytów zawartych z Bankiem BPH S.A.)</option>
+<option value="Deutsche Bank S.A.">Deutsche Bank S.A.</option>
+<option value="BNP Paribas S.A. (następca prawny BGŻ S.A., Fortis Bank S.A.)">BNP Paribas S.A. (następca prawny BGŻ S.A., Fortis Bank S.A.)</option>
+<option value="Bank Ochrony Środowiska S.A.">Bank Ochrony Środowiska S.A.</option>
+<option value="Svenska Handelsbanken AB S.A.">Svenska Handelsbanken AB S.A.</option>
+<option value="DnB Bank Polska S.A.">DnB Bank Polska S.A.</option>
+<option value="Inny">Inny</option>

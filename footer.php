@@ -4,7 +4,7 @@
  */
 ?>
 
-<footer class="pt-5 pb-3 text-white" style="font-size:.85rem !important; background:#531e1e;">
+<footer class="pt-5 mt-4 pb-3 text-white" style="font-size:.85rem !important; background:#531e1e;">
     <div class="container">
         <div class="row">
             <div class="col-md-2 col-sm-12 mb-sm-0 mb-4 text-center text-md-start d-none d-md-block">
@@ -30,7 +30,7 @@
                 <p>
                     Strona główna<br />
                     Kontakt<br />
-                    <a class="text-decoration-none text-white" href="polityka-prywatnosci">Polityka prywatności</a>
+                    <a class="text-decoration-none text-white" href="<?php echo esc_url(home_url('/')); ?>polityka-prywatnosci">Polityka prywatności</a>
                 </p>
             </div>
 

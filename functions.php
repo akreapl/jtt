@@ -426,7 +426,7 @@ class bootstrap_5_wp_nav_menu_walker extends Walker_Nav_menu
     }
 }
 
-function makeemail()
+function makeemail_credit()
 {
     $emaildate      = date("Y-m-d H:i:s");
     $bank =  filter_input(INPUT_POST, 'bank');
@@ -486,6 +486,126 @@ function makeemail()
     mail($email, $subject2, $clientmessage, $headers);
 }
 
+
+function makeemail_death()
+{
+    $emaildate      = date("Y-m-d H:i:s");
+
+    $clientname =  filter_input(INPUT_POST, 'clientname');
+    $email = filter_input(INPUT_POST, 'email');
+    $phone = filter_input(INPUT_POST, 'phone');
+    $deathdate = filter_input(INPUT_POST, 'death-date');
+    $familytype = filter_input(INPUT_POST, 'family-type');
+    $relation = filter_input(INPUT_POST, 'relation');
+    $livingstatus = filter_input(INPUT_POST, 'living-status');
+    $medictreatment = filter_input(INPUT_POST, 'medic-treatment');
+    $doctor = filter_input(INPUT_POST, 'doctor');
+    $personallife = filter_input(INPUT_POST, 'personal-life');
+    $proffesionallife = filter_input(INPUT_POST, 'professional-life');
+    $age = filter_input(INPUT_POST, 'age');
+    $consent = filter_input(INPUT_POST, 'consent');
+    $consentdict = "NIE";
+    if ($consent == "on") {
+        $consentdict = "TAK";
+    }
+
+    $message        =  '<p style="font-size:1.3em;">Data zapytania: <b>' . $emaildate . '</b>' .
+        '<br />Imię i nazwisko: <b>' . $clientname . '</b>' .
+        '<br />Email: <b>' . $email . '</b>' .
+        '<br />Telefon: <b>' . $phone . '</b><br /><br />' .
+        '<br />Data śmierci/wypadku: <b>' . $deathdate . '</b><br />' .
+        '<br />Stopień pokrewieństwa <b>' . $familytype . '</b><br />' .
+        '<br />Więzi emocjonalne <b>' . $relation . '</b><br />' .
+        '<br />Wspólne zamieszkiwanie <b>' . $livingstatus . '</b><br />' .
+        '<br />Zażywanie lekarstw <b>' . $medictreatment . '</b><br />' .
+        '<br />Korzystanie z pomocy lekarza <b>' . $doctor . '</b><br />' .
+        '<br />Wpływ na życie osobiste <b>' . $personallife . '</b><br />' .
+        '<br />Wpływ na życie zawodowe <b>' . $proffesionallife . '</b><br />' .
+        '<br />Wiek w chwili smierci/wypadku <b>' . $age . '</b><br />' .
+        '<br />Akceptacja Polityki Prywatnośći: <b>' . $consentdict . '</b>';
+
+    $clientmessage = '<b>Szanowny Kliencie,</b><br /><br />
+                        Kancelaria JTT potwierdza otrzymanie Państwa zapytania. 
+                        <br /><br />
+                        Informujemy, że nasi prawnicy przeanalizują zgłoszenie i skontaktują się z Państwem najpóźniej w ciągu 2 dni roboczych.
+                        <br /><br /><br /><br />
+                        Z poważaniem<br />
+                        Kancelaria JTT<br /><br /><hr />
+                        <b>SZCZEGÓŁY ZAPYTANIA:</b><br />' . $message;
+
+    $to             = "info@akrea.pl";
+    $from           = "no-reply@jtt.akrea.pl";
+    $subject        = 'TEST Zapytanie od ' . $clientname;
+    $subject2       = 'TEST Potwierdzenie otrzymania zapytania | Kancelaria JTT';
+
+    $headers        = 'MIME-Version: 1.0' . "\r\n";
+    $headers        .= 'Content-type: text/html; charset=utf-8' . "\r\n";
+
+    $headers        .= 'From: ' . $from . "\r\n";
+
+    mail($to, $subject, $message, $headers);
+    mail($email, $subject2, $clientmessage, $headers);
+}
+
+function makeemail_health()
+{
+    $emaildate      = date("Y-m-d H:i:s");
+
+    $clientname =  filter_input(INPUT_POST, 'clientname');
+    $email = filter_input(INPUT_POST, 'email');
+    $phone = filter_input(INPUT_POST, 'phone');
+    $age = filter_input(INPUT_POST, 'age');
+    $accidentdate = filter_input(INPUT_POST, 'accident-date');
+    $hospital = filter_input(INPUT_POST, 'hospital');
+    $hospitaltime = filter_input(INPUT_POST, 'hospital-time');
+    $mentalhelp = filter_input(INPUT_POST, 'mental-help');
+    $personallife = filter_input(INPUT_POST, 'personal-life');
+    $proffesionallife = filter_input(INPUT_POST, 'professional-life');
+    $injuries = filter_input(INPUT_POST, 'injuries');
+    $difficulties = filter_input(INPUT_POST, 'difficulties');
+    $consent = filter_input(INPUT_POST, 'consent');
+    $consentdict = "NIE";
+    if ($consent == "on") {
+        $consentdict = "TAK";
+    }
+
+    $message        =  '<p style="font-size:1.3em;">Data zapytania: <b>' . $emaildate . '</b>' .
+        '<br />Imię i nazwisko: <b>' . $clientname . '</b>' .
+        '<br />Email: <b>' . $email . '</b>' .
+        '<br />Telefon: <b>' . $phone . '</b><br /><br />' .
+        '<br />Wiek <b>' . $age . '</b><br />' .
+        '<br />Data wypadku: <b>' . $accidentdate . '</b><br />' .
+        '<br />Pobyt w szpitalu: <b>' . $hospital . '</b><br />' .
+        '<br />Długośc hospitalizacji: <b>' . $hospitaltime . '</b><br />' .
+        '<br />Pomoc psychologa/psychiatry: <b>' . $mentalhelp . '</b><br />' .
+        '<br />Wpływ na życie osobiste <b>' . $personallife . '</b><br />' .
+        '<br />Wpływ na życie zawodowe <b>' . $proffesionallife . '</b><br />' .
+        '<br />Odniesione obrażenia: <b>' . $injuries . '</b><br />' .
+        '<br />Odczuwalne skutki wypadku: <b>' . $difficulties . '</b><br />' .
+        '<br />Akceptacja Polityki Prywatnośći: <b>' . $consentdict . '</b>';
+
+    $clientmessage = '<b>Szanowny Kliencie,</b><br /><br />
+                        Kancelaria JTT potwierdza otrzymanie Państwa zapytania. 
+                        <br /><br />
+                        Informujemy, że nasi prawnicy przeanalizują zgłoszenie i skontaktują się z Państwem najpóźniej w ciągu 2 dni roboczych.
+                        <br /><br /><br /><br />
+                        Z poważaniem<br />
+                        Kancelaria JTT<br /><br /><hr />
+                        <b>SZCZEGÓŁY ZAPYTANIA:</b><br />' . $message;
+
+    $to             = "info@akrea.pl";
+    $from           = "no-reply@jtt.akrea.pl";
+    $subject        = 'TEST Zapytanie od ' . $clientname;
+    $subject2       = 'TEST Potwierdzenie otrzymania zapytania | Kancelaria JTT';
+
+    $headers        = 'MIME-Version: 1.0' . "\r\n";
+    $headers        .= 'Content-type: text/html; charset=utf-8' . "\r\n";
+
+    $headers        .= 'From: ' . $from . "\r\n";
+
+    mail($to, $subject, $message, $headers);
+    mail($email, $subject2, $clientmessage, $headers);
+}
 
 function show_people($page_id, $numberofpages)
 {

@@ -1,4 +1,4 @@
-<?php /* Template Name: Formularz frankowicze */ ?>
+<?php /* Template Name: Formularz za uszczerbek */ ?>
 
 <?php
 get_header();
@@ -20,7 +20,7 @@ include_once('inc-page-header.php');
                 // End of the loop.
                 endwhile;
 
-                include_once('inc-form-chf.php');
+                include_once('inc-form-health.php');
                 ?>
             </article>
         </div>
