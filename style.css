@@ -173,8 +173,12 @@ h1 span, h2 span {font-style: italic;}
 
 .slider-header {
     text-align: left;
-    font-size: clamp(25px, 4vw, 58px);
+    font-size: clamp(20px, 3vw, 45px);
     line-height: 1.4em;
+}
+
+.slider-sentence {
+    font-size: clamp(14px, 1vw, 18px);
 }
 
 .slider-header::after {

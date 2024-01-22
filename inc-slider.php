@@ -11,14 +11,14 @@ if (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|
 <?php } else { ?>
 
 
-    <div id="carouselExampleDark" class="carousel carousel-dark slide carousel-fade d-none d-md-block" style="margin-top:10px;">
+    <div id="carouselExampleDark" class="carousel carousel-dark slide carousel-fade d-none d-md-block" style="margin-top:35px;">
         <div class="carousel-inner">
             <div class="carousel-item bg-slider active position-relative overflow-hidden" data-bs-interval="10000">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/v3/1.svg" class="" alt="Kacelaria frankowa Szczecin">
                 <div class="d-none d-md-block position-absolute" style="width:35%; top:110px; right:18%;">
                     <div>
                         <h1 class="slider-header py-4">Z nami jesteś na wyższej pozycji</h1>
-                        <p class="fs-4">Pracujemy ciężko, aby rozwiązywać spory wcześnie i polubownie, jeżeli to tylko możliwe, często załatwiając sprawy konfliktowe jeszcze przed wniesieniem pozwu.</p>
+                        <p class="slider-sentence">Pracujemy ciężko, aby rozwiązywać spory wcześnie i polubownie, jeżeli to tylko możliwe, często załatwiając sprawy konfliktowe jeszcze przed wniesieniem pozwu.</p>
                     </div>
                 </div>
             </div>
@@ -28,7 +28,7 @@ if (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|
                 <div class="d-none d-md-block position-absolute" style="width:35%; top:110px; right:18%;">
                     <div>
                         <h1 class="slider-header py-4">Nie zatrudniaj nas, jeśli to proste</h1>
-                        <p class="fs-4">Jeśli masz trudny, skomplikowany lub nietypowy spór biznesowy albo prywatny, jesteśmy gotowi podjąć każde wyzwanie.</p>
+                        <p class="slider-sentence">Jeśli masz trudny, skomplikowany lub nietypowy spór biznesowy albo prywatny, jesteśmy gotowi podjąć każde wyzwanie.</p>
                     </div>
                 </div>
             </div>
@@ -37,7 +37,7 @@ if (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|
                 <div class="d-none d-md-block position-absolute" style="width:35%; top:110px; right:18%;">
                     <div>
                         <h1 class="slider-header py-4">Nie podążamy schematem, piszemy historię</h1>
-                        <p class="fs-4">Analizujemy wszystkie aspekty Twojej działalności i/lub problemu prawnego z kreatywną perspektywą, wykorzystując nie tylko suche fakty lub prawo, aby znaleźć unikalne podejście do rozwiązania Twoich problemów prawnych. Zawsze toczymy właściwą walkę, we właściwy sposób.</p>
+                        <p class="slider-sentence">Analizujemy wszystkie aspekty Twojej działalności i/lub problemu prawnego z kreatywną perspektywą, wykorzystując nie tylko suche fakty lub prawo, aby znaleźć unikalne podejście do rozwiązania Twoich problemów prawnych. Zawsze toczymy właściwą walkę, we właściwy sposób.</p>
                     </div>
                 </div>
             </div>
@@ -46,7 +46,7 @@ if (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|
                 <div class="d-none d-md-block position-absolute" style="width:35%; top:110px; right:18%;">
                     <div>
                         <h1 class="slider-header py-4">Zaczynamy od Twojego końcowego rezultatu</h1>
-                        <p class="fs-4">Większość kancelarii prawnych nie rozumie końcowego rezultatu, który chcesz osiągnąć, skupiając się jedynie na rozpoczęciu działań. Naszym pierwszym krokiem jest współpraca z Tobą w celu wyjaśnienia Twoich celów oraz sytuacji prawnej i/lub biznesowej, w jakiej się znajdujesz.</p>
+                        <p class="slider-sentence">Większość kancelarii prawnych nie rozumie końcowego rezultatu, który chcesz osiągnąć, skupiając się jedynie na rozpoczęciu działań. Naszym pierwszym krokiem jest współpraca z Tobą w celu wyjaśnienia Twoich celów oraz sytuacji prawnej i/lub biznesowej, w jakiej się znajdujesz.</p>
                     </div>
                 </div>
             </div>
