@@ -16,7 +16,7 @@ if (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|
                 <img src="<?php echo get_template_directory_uri(); ?>/img/v3/1.svg" class="" alt="Kacelaria frankowa Szczecin">
                 <div class="d-none d-md-block position-absolute" style="width:35%; top:110px; right:18%;">
                     <div>
-                        <h1 class="slider-header py-3">Z nami jesteś na wyższej pozycji</h1>
+                        <h1 class="slider-header py-3"><span class="">Z nami jesteś</span> na wyższej pozycji</h1>
                         <p class="slider-sentence">Pracujemy ciężko, aby rozwiązywać spory wcześnie i polubownie, jeżeli to tylko możliwe, często załatwiając sprawy konfliktowe jeszcze przed wniesieniem pozwu.</p>
                     </div>
                 </div>

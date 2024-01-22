@@ -47,7 +47,7 @@
                         </div>
                         <div class="model-name mx-3 mt-sm-3">
                             <h3 class="text-black text-center">Spadkobiercy</h3>
-                            <p class="text-primary text-center mt-3" style="width:80%; margin: auto;">rozwiązujemy sprawy spadkowe szybko i sprawnie</p>
+                            <p class="text-primary text-center mt-3" style="width:80%; margin: auto;">rozwiązujemy sprawy spadkowe szybko <br />i sprawnie</p>
                         </div>
                     </div>
                 </a>
@@ -57,11 +57,11 @@
                 <a href="#" class="text-decoration-none w-100">
                     <div class="model shadow bg-white d-flex flex-column align-items-center justify-content-center">
                         <div class="vicon d-flex align-items-center justify-content-center">
-                            <img src="<?php echo get_template_directory_uri(); ?>/img/icon-poszkodowani.webp" class="img-fluid" alt="...">
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/icon-konsumenci.webp" class="img-fluid" alt="...">
                         </div>
                         <div class="model-name mx-3 mt-sm-3">
                             <h3 class="text-black text-center">Konsumenci</h3>
-                            <p class="text-primary text-center mt-3" style="width:80%; margin: auto;">skutecznie negocjujemy z bankami i pomagamy naszym Klientom odzyskać nadpłacone środki</p>
+                            <p class="text-primary text-center mt-3" style="width:80%; margin: auto;">świadczymy pomoc prawną Konsumentom w dochodzeniu swoich praw</p>
                         </div>
                     </div>
                 </a>
@@ -75,7 +75,7 @@
                         </div>
                         <div class="model-name mx-3 mt-sm-3">
                             <h3 class="text-black text-center">Poszkodowani</h3>
-                            <p class="text-primary text-center mt-3" style="width:80%; margin: auto;">skutecznie negocjujemy z bankami i pomagamy naszym Klientom odzyskać nadpłacone środki</p>
+                            <p class="text-primary text-center mt-3" style="width:80%; margin: auto;">wspieramy osoby podszkodowane <br />w wypadkach w uzyskaniu naleznych im odszkodowań</p>
                         </div>
                     </div>
                 </a>
@@ -89,7 +89,7 @@
                         </div>
                         <div class="model-name mx-3 mt-sm-3">
                             <h3 class="text-black text-center">Przedsiębiorcy</h3>
-                            <p class="text-primary text-center mt-3" style="width:80%; margin: auto;">skutecznie negocjujemy z bankami i pomagamy naszym Klientom odzyskać nadpłacone środki</p>
+                            <p class="text-primary text-center mt-3" style="width:80%; margin: auto;">wspomagamy firmy w bezpiecznym prowadzeniu biznesu</p>
                         </div>
                     </div>
                 </a>

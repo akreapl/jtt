@@ -123,6 +123,26 @@ a.nav-link {
         opacity: 1;
 }
 
+.nav-link .active .menu-item {
+    content: '';
+        background: #f8f0e7;
+        height: 2px;
+        width: 100%;
+        position: absolute;
+        margin: 0 auto;
+        bottom: 0;
+        -webkit-animation: fadein 1s;
+        /* Safari, Chrome and Opera > 12.1 */
+        -moz-animation: fadein 1s;
+        /* Firefox < 16 */
+        -ms-animation: fadein 1s;
+        /* Internet Explorer */
+        -o-animation: fadein 1s;
+        /* Opera < 12.1 */
+        animation: fadein 1s;
+        opacity: 1;
+}
+
 
 .breadcrumbs a {
     color:#fff !important;
@@ -203,6 +223,9 @@ h1 span, h2 span {font-style: italic;}
     background-color: #fff;
     font-size: 1.3em;
     transition: all 200ms ease-in-out;
+    @media (max-width: 768px) {
+        min-height: 130px;
+    }
 }
 
 a .query-form {

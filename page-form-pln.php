@@ -9,13 +9,13 @@ include_once('inc-page-header.php');
 
 
 <div class="container">
-    <div class="row d-flex justify-content-between">
+    <div class="row d-flex justify-content-between mb-4">
 
         <?php
         include_once('inc-form-pln.php');
         ?>
 
-        <div class="col-md-6 col-sm-12 ms-md-3 p-5 border-notice" style="text-align: justify;">
+        <div class="col-md-6 col-sm-12 ms-md-3 p-4 border-notice" style="text-align: justify;">
             <article>
                 <?php
                 // Start the loop.
