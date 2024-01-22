@@ -22,7 +22,7 @@ include_once('inc-page-header.php');
                     ?>
                 </article>
             </div>
-            <?php include_once('inc-contact-form.php'); ?>
+            <?php include_once('inc-contact.php'); ?>
         </div>
     </div>
 </div>
