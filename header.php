@@ -28,7 +28,7 @@
                     <img src="<?php echo get_template_directory_uri(); ?>/img/jtt-logo.webp" style="width:100px; height:auto;" alt="<?php echo bloginfo(); ?>" class="img-fluid lazy" />
                 </a>
                 <a class="navbar-brand logo-min d-block d-md-none" href="<?php echo esc_url(home_url('/')); ?>">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/jtt-logo-min.webp" style="width:90px; height:auto;" alt="<?php echo bloginfo(); ?>" class="img-fluid lazy" />
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/jtt-logo-min2.webp" style="width:90px; height:auto;" alt="<?php echo bloginfo(); ?>" class="img-fluid lazy" />
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Menu">
                     <span class="navbar-toggler-icon "></span>
