@@ -9,8 +9,13 @@ include_once('inc-page-header.php');
 
 
 <div class="container">
-    <div class="row">
-        <div class="col-12" style="text-align: justify;">
+    <div class="row d-flex justify-content-between">
+
+        <?php
+        include_once('inc-form-pln.php');
+        ?>
+
+        <div class="col-md-6 col-sm-12 ms-md-3 p-5 border-notice" style="text-align: justify;">
             <article>
                 <?php
                 // Start the loop.
@@ -19,8 +24,6 @@ include_once('inc-page-header.php');
                     the_content();
                 // End of the loop.
                 endwhile;
-
-                include_once('inc-form-pln.php');
                 ?>
             </article>
         </div>

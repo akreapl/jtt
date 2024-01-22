@@ -10,7 +10,6 @@ if (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|
 
 <?php } else { ?>
 
-
     <div id="carouselExampleDark" class="carousel carousel-dark slide carousel-fade d-none d-md-block" style="margin-top:35px;">
         <div class="carousel-inner">
             <div class="carousel-item bg-slider active position-relative overflow-hidden" data-bs-interval="10000">
