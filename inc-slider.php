@@ -17,7 +17,7 @@ if (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|
                 <img src="<?php echo get_template_directory_uri(); ?>/img/v3/1.svg" class="" alt="Kacelaria frankowa Szczecin">
                 <div class="d-none d-md-block position-absolute" style="width:35%; top:110px; right:18%;">
                     <div>
-                        <h1 class="slider-header py-4">Z nami jesteś na wyższej pozycji</h1>
+                        <h1 class="slider-header py-3">Z nami jesteś na wyższej pozycji</h1>
                         <p class="slider-sentence">Pracujemy ciężko, aby rozwiązywać spory wcześnie i polubownie, jeżeli to tylko możliwe, często załatwiając sprawy konfliktowe jeszcze przed wniesieniem pozwu.</p>
                     </div>
                 </div>
@@ -27,7 +27,7 @@ if (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|
                 <img src="<?php echo get_template_directory_uri(); ?>/img/v3/2.svg" class="" alt="Kacelaria frankowa Szczecin">
                 <div class="d-none d-md-block position-absolute" style="width:35%; top:110px; right:18%;">
                     <div>
-                        <h1 class="slider-header py-4">Nie zatrudniaj nas, jeśli to proste</h1>
+                        <h1 class="slider-header py-3">Nie zatrudniaj nas, jeśli to proste</h1>
                         <p class="slider-sentence">Jeśli masz trudny, skomplikowany lub nietypowy spór biznesowy albo prywatny, jesteśmy gotowi podjąć każde wyzwanie.</p>
                     </div>
                 </div>
@@ -36,7 +36,7 @@ if (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|
                 <img src="<?php echo get_template_directory_uri(); ?>/img/v3/3.svg" class="" alt="Sprawy frankowe Szczecin">
                 <div class="d-none d-md-block position-absolute" style="width:35%; top:110px; right:18%;">
                     <div>
-                        <h1 class="slider-header py-4">Nie podążamy schematem, piszemy historię</h1>
+                        <h1 class="slider-header py-3">Nie podążamy schematem, piszemy historię</h1>
                         <p class="slider-sentence">Analizujemy wszystkie aspekty Twojej działalności i/lub problemu prawnego z kreatywną perspektywą, wykorzystując nie tylko suche fakty lub prawo, aby znaleźć unikalne podejście do rozwiązania Twoich problemów prawnych. Zawsze toczymy właściwą walkę, we właściwy sposób.</p>
                     </div>
                 </div>
@@ -45,7 +45,7 @@ if (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|
                 <img src="<?php echo get_template_directory_uri(); ?>/img/v3/4.svg" class="" alt="Kancelaria JTT Szczecin">
                 <div class="d-none d-md-block position-absolute" style="width:35%; top:110px; right:18%;">
                     <div>
-                        <h1 class="slider-header py-4">Zaczynamy od Twojego końcowego rezultatu</h1>
+                        <h1 class="slider-header py-3">Zaczynamy od Twojego końcowego rezultatu</h1>
                         <p class="slider-sentence">Większość kancelarii prawnych nie rozumie końcowego rezultatu, który chcesz osiągnąć, skupiając się jedynie na rozpoczęciu działań. Naszym pierwszym krokiem jest współpraca z Tobą w celu wyjaśnienia Twoich celów oraz sytuacji prawnej i/lub biznesowej, w jakiej się znajdujesz.</p>
                     </div>
                 </div>

@@ -62,7 +62,7 @@
 
             <div class="col-md-3 col-sm-12 text-center text-md-start">
                 <h5 class="noafter">Adres</h5>
-                Kancelaria Radców Prawnych Jagiełło Tobolewski<br />
+                Kancelaria Radców Prawnych<br />Jagiełło Tobolewski<br />
                 Aleja Papieża Jana Pawła II 28/3<br />
                 70-454 Szczecin
             </div>

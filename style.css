@@ -131,7 +131,7 @@ a.nav-link {
 h1.noafter::after, h2.noafter::after, h3.noafter::after, h4.noafter::after, h5.noafter::after, h6.noafter::after {
     content: '';
     border: none !important;
-    display:none;
+    display:none !important;
 }
 
 h1 span, h2 span {font-style: italic;}
@@ -189,7 +189,7 @@ h1 span, h2 span {font-style: italic;}
 }
 
 .slider-sentence {
-    font-size: clamp(14px, 1vw, 18px);
+    font-size: clamp(12px, 1vw, 18px);
 }
 
 .slider-header::after {

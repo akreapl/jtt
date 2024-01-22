@@ -1,5 +1,5 @@
 <div class="d-flex align-content-center pt-md-5 pt-sm-0 bg-light">
-    <div class="container py-md-5 py-sm-0">
+    <div class="container py-md-3 py-sm-0">
         <div class="row gx-4 d-flex justify-content-center models align-content-around align-items-center">
             <div class="col-12 my-5 mt-md-0 d-flex justify-content-center">
                 <h1>Nasi <span class="text-primary fw-bolder fst-italic">prawnicy</span></h1>

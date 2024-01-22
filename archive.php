@@ -17,7 +17,7 @@ include_once('inc-page-header.php');
                     </div>
 
                     <div class="col-md-8 col-sm-12 mb-5">
-                        <?php the_title(sprintf('<h2 class="text-left noafter pb-3"><a href="%s">', esc_url(get_permalink())), '</a></h2>'); ?>
+                        <?php the_title(sprintf('<h2 class="text-left noafter pb-3"><a class="text-decoration-none" href="%s">', esc_url(get_permalink())), '</a></h2>'); ?>
                         <div class="entry-content text-justify pt-3" style="text-align:justify;">
                             <?php
                             the_excerpt(); ?>
