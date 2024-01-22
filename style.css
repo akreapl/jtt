@@ -10,6 +10,17 @@ body {
 
 .vicon { width:33%;}
 
+.tel-link {
+    border: 1px solid #fff !important;
+    transition: all 300ms linear;
+}
+
+.tel-link:hover {
+    color:#d7af7d !important;
+    border: 1px solid #d7af7d !important;
+    transition: all 300ms linear;
+}
+
 /* font-family: 'Noto Sans',
 sans-serif;
 font-family: 'Source Serif 4',

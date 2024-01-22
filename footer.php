@@ -71,9 +71,9 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-12 text-center mt-4 d-flex">
+            <div class="col-12 text-center mt-4 d-flex flex-column">
                 <span class="copyright text-small"><?php copyright(); ?>, all rights reserved.</span>
-                <span class="d-flex justify-content-end p-0 m-0">designed by <a class="text-white text-small text-decoration-none ms-1" href="https://akrea.pl">akrea.pl</a></span>
+                <span class="align-self-end p-0 m-0">designed by <a class="text-white text-small text-decoration-none" href="https://akrea.pl">akrea.pl</a></span>
             </div>
         </div>
         <div id="scrolltop">

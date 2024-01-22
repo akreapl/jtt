@@ -50,7 +50,7 @@
                             'walker' => new bootstrap_5_wp_nav_menu_walker()
                         ));
                         ?>
-                        <a class="text-white text-decoration-none border-white p-2" style="border:1px solid #fff" href="tel:+48914331066">+48 91 433 10 66</a>
+                        <a class="text-white tel-link text-decoration-none border-white p-2" href="tel:+48914331066">+48 91 433 10 66</a>
                     </div>
                 </div>
         </nav>
