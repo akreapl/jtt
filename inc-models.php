@@ -15,7 +15,7 @@
                 <a href="/uslugi-prawne/frankowicze/" class="text-decoration-none w-100">
                     <div class="model shadow bg-white d-flex flex-column align-items-center justify-content-center">
                         <div class="vicon d-flex align-items-center justify-content-center">
-                            <img src="<?php echo get_template_directory_uri(); ?>/img/icon-chf.webp" class="img-fluid" alt="...">
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/icon-chf.webp" class="img-fluid" alt="Pomoc frankowiczom Szczecin">
                         </div>
                         <div class="model-name mx-3 mt-sm-3">
                             <h3 class="text-black text-center">Frankowicze</h3>
@@ -29,7 +29,7 @@
                 <a href="/uslugi-prawne/zlotowkowicze/" class="text-decoration-none w-100">
                     <div class="model shadow bg-white d-flex flex-column align-items-center justify-content-center">
                         <div class="vicon d-flex align-items-center justify-content-center">
-                            <img src="<?php echo get_template_directory_uri(); ?>/img/icon-pln-v1.webp" class="img-fluid" alt="...">
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/icon-pln-v1.webp" class="img-fluid" alt="Pomoc prawna dla kredytobiorców Szczecin">
                         </div>
                         <div class="model-name mx-3 mt-sm-3">
                             <h3 class="text-black text-center">Złotówkowicze</h3>
@@ -43,7 +43,7 @@
                 <a href="/uslugi-prawne/spadkobiercy/" class="text-decoration-none w-100">
                     <div class="model shadow bg-white d-flex flex-column align-items-center justify-content-center">
                         <div class="vicon d-flex align-items-center justify-content-center">
-                            <img src="<?php echo get_template_directory_uri(); ?>/img/icon-spadki.webp" class="img-fluid" alt="...">
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/icon-spadki.webp" class="img-fluid" alt="Sprawy sapdkowe Szczecin">
                         </div>
                         <div class="model-name mx-3 mt-sm-3">
                             <h3 class="text-black text-center">Spadkobiercy</h3>
@@ -57,7 +57,7 @@
                 <a href="#" class="text-decoration-none w-100">
                     <div class="model shadow bg-white d-flex flex-column align-items-center justify-content-center">
                         <div class="vicon d-flex align-items-center justify-content-center">
-                            <img src="<?php echo get_template_directory_uri(); ?>/img/icon-konsumenci.webp" class="img-fluid" alt="...">
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/icon-przedsiebiorcy-v3.webp" class="img-fluid" alt="Prawnik ochrona konsumantów Szczecin">
                         </div>
                         <div class="model-name mx-3 mt-sm-3">
                             <h3 class="text-black text-center">Konsumenci</h3>
@@ -71,7 +71,7 @@
                 <a href="/uslugi-prawne/poszkodowani/" class="text-decoration-none w-100">
                     <div class="model shadow bg-white d-flex flex-column align-items-center justify-content-center">
                         <div class="vicon d-flex align-items-center justify-content-center">
-                            <img src="<?php echo get_template_directory_uri(); ?>/img/icon-poszkodowani.webp" class="img-fluid" alt="...">
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/icon-poszkodowani.webp" class="img-fluid" alt="Prawnicy odszkodowania Szczecin">
                         </div>
                         <div class="model-name mx-3 mt-sm-3">
                             <h3 class="text-black text-center">Poszkodowani</h3>
@@ -85,7 +85,7 @@
                 <a href="/uslugi-prawne/przedsiebiorcy/" class="text-decoration-none w-100 d-flex flex-column align-items-center justify-content-start">
                     <div class="model shadow bg-white d-flex flex-column align-items-center justify-content-center">
                         <div class="vicon d-flex align-items-center justify-content-center">
-                            <img src="<?php echo get_template_directory_uri(); ?>/img/icon-przedsiebiorcy-v1.webp" class="img-fluid" alt="...">
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/icon-przedsiebiorcy-v1.webp" class="img-fluid" alt="Kancelraria prawna dla firm Szczecin">
                         </div>
                         <div class="model-name mx-3 mt-sm-3">
                             <h3 class="text-black text-center">Przedsiębiorcy</h3>

@@ -15,8 +15,8 @@ include_once('inc-page-header.php');
         include_once('inc-form-pln.php');
         ?>
 
-        <div class="col-md-6 col-sm-12 ms-md-3 p-4 border-notice" style="text-align: justify;">
-            <article>
+        <div class="col-md-6 col-sm-12 ms-md-3 p-4" style="text-align: justify;">
+            <article class="border-notice p-3">
                 <?php
                 // Start the loop.
                 while (have_posts()) : the_post();
