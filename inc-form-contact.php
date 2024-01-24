@@ -1,4 +1,4 @@
-<form style="background-color: rgba(255,255,255,0.05);" class="row px-5" enctype="multipart/form-data" method="post" action="/dziekujemy-za-kontakt/">
+<form style="background-color: rgba(255,255,255,0.05);" class="row px-md-5" enctype="multipart/form-data" method="post" action="/dziekujemy-za-kontakt/">
     <p class="fs-3 text-left text-black">Formularz kontaktowy</p>
     <div class="col-md-12 mt-1">
         <label for="clientname" class="form-label text-muted">Imię i nazwisko*</label>

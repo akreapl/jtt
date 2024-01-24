@@ -18,13 +18,13 @@
     <div class="container">
         <div class="row gx-5 d-flex justify-content-start align-items-center align-content-around">
             <div class="col-12">
-                <h1 class="noafter p-0 m-0"><?php
-                                            if (is_archive()) {
-                                                the_archive_title('<h1 class="noafter">', '</h1>');
-                                            } else {
-                                                echo get_the_title();
-                                            }
-                                            ?></h1>
+                <h1 class="noafter mt-sm-4 m-md-0 p-0"><?php
+                                                        if (is_archive()) {
+                                                            the_archive_title('<h1 class="noafter">', '</h1>');
+                                                        } else {
+                                                            echo get_the_title();
+                                                        }
+                                                        ?></h1>
             </div>
         </div>
     </div>

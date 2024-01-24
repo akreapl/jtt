@@ -21,10 +21,12 @@ body {
     transition: all 300ms linear;
 }
 
-/* font-family: 'Noto Sans',
-sans-serif;
-font-family: 'Source Serif 4',
-serif; */
+.font-sans-serif {
+    font-family: 'Noto Sans', sans-serif !important;
+}
+
+.font-serif {font-family: 'Source Serif 4', serif !important;}
+
 
 .logo-min {
     -webkit-animation: fadein 1s;
@@ -279,7 +281,7 @@ a:hover .query-form {
 .menu-margin {
     margin-top: 121px;
     @media (max-width: 768px) {
-            margin-top: 83px;
+            margin-top: 73px;
         }
 }
 
