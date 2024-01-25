@@ -7,9 +7,7 @@
                     get_breadcrumb();
                     ?>
                 </p>
-
             </div>
-
         </div>
     </div>
 </div>

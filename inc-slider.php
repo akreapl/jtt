@@ -8,28 +8,28 @@ if (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|
         </div>
     </div> -->
 
-    <div id="carouselExampleDark" class="carousel carousel-dark slide" style="margin-top:60px;">
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel" style="margin-top:60px;">
         <div class="carousel-inner">
-            <div class="carousel-item bg-slider1 active position-relative overflow-hidden" data-bs-interval="10000">
+            <div class="carousel-item bg-slider1 active position-relative overflow-hidden">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/v4mob/1.svg" class="" alt="Kacelaria frankowa Szczecin">
                 <div class="d-none d-md-block position-absolute" style="width:35%; top:110px; right:18%;">
 
                 </div>
             </div>
 
-            <div class="carousel-item bg-slider1 position-relative overflow-hidden" data-bs-interval="10000">
+            <div class="carousel-item bg-slider1 position-relative overflow-hidden">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/v4mob/2.svg" class="" alt="Kacelaria frankowa Szczecin">
                 <div class="d-none d-md-block position-absolute" style="width:35%; top:110px; right:18%;">
 
                 </div>
             </div>
-            <div class="carousel-item bg-slider1 position-relative overflow-hidden" data-bs-interval="10000">
+            <div class="carousel-item bg-slider1 position-relative overflow-hidden">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/v4mob/3.svg" class="" alt="Sprawy frankowe Szczecin">
                 <div class="d-none d-md-block position-absolute" style="width:35%; top:110px; right:18%;">
 
                 </div>
             </div>
-            <div class="carousel-item bg-slider1 position-relative overflow-hidden" data-bs-interval="10000">
+            <div class="carousel-item bg-slider1 position-relative overflow-hidden">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/v4mob/4.svg" class="" alt="Kancelaria JTT Szczecin">
                 <div class="d-none d-md-block position-absolute" style="width:35%; top:110px; right:18%;">
 
@@ -48,28 +48,28 @@ if (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|
 
 <?php } else { ?>
 
-    <div id="carouselExampleDark" class="carousel carousel-dark slide" style="margin-top:120px;">
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel" style="margin-top:120px;">
         <div class="carousel-inner">
-            <div class="carousel-item bg-slider1 active position-relative overflow-hidden" data-bs-interval="10000">
+            <div class="carousel-item bg-slider1 active position-relative overflow-hidden">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/v4/v4-1.svg" class="" alt="Kacelaria frankowa Szczecin">
                 <div class="d-none d-md-block position-absolute" style="width:35%; top:110px; right:18%;">
 
                 </div>
             </div>
 
-            <div class="carousel-item bg-slider1 position-relative overflow-hidden" data-bs-interval="10000">
+            <div class="carousel-item bg-slider1 position-relative overflow-hidden">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/v4/v4-2.svg" class="" alt="Kacelaria frankowa Szczecin">
                 <div class="d-none d-md-block position-absolute" style="width:35%; top:110px; right:18%;">
 
                 </div>
             </div>
-            <div class="carousel-item bg-slider1 position-relative overflow-hidden" data-bs-interval="10000">
+            <div class="carousel-item bg-slider1 position-relative overflow-hidden">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/v4/v4-3.svg" class="" alt="Sprawy frankowe Szczecin">
                 <div class="d-none d-md-block position-absolute" style="width:35%; top:110px; right:18%;">
 
                 </div>
             </div>
-            <div class="carousel-item bg-slider1 position-relative overflow-hidden" data-bs-interval="10000">
+            <div class="carousel-item bg-slider1 position-relative overflow-hidden">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/v4/v4-4.svg" class="" alt="Kancelaria JTT Szczecin">
                 <div class="d-none d-md-block position-absolute" style="width:35%; top:110px; right:18%;">
 
