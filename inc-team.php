@@ -12,8 +12,13 @@
     <div class="container py-3 py-sm-0">
         <div class="row gx-4 d-flex justify-content-center models align-content-around align-items-center">
             <?php
-            show_people(327, 99);
-            ?>
+            show_people2(327);
+
+            if (is_mobile()) { ?>
+                <div class="col-12 text-center">
+                    <a href="/zespol/" class="w-100 btn btn-outline-primary my-3">ZOBACZ WSZYSTKICH</a>
+                </div>
+            <?php } ?>
         </div>
     </div>
 </div>

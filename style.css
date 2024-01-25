@@ -279,9 +279,9 @@ a:hover .query-form {
 }
 
 .menu-margin {
-    margin-top: 111px;
+    margin-top: 121px;
     @media (max-width: 768px) {
-            margin-top: 55px;
+            margin-top: 95px;
         }
 }
 
