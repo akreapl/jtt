@@ -86,7 +86,7 @@ function akreawp_widgets_init()
         'description'   => __('Pierwszy obszar widgetów w stopce.', 'akreawp'),
         'before_widget' => '<section id="%1$s" class="widget %2$s">',
         'after_widget'  => '</section>',
-        'before_title'  => '<h5 class="fw-bolder">',
+        'before_title'  => '<h5 class="fw-bolder noafter">',
         'after_title'   => '</h5>',
     ));
 
@@ -96,7 +96,7 @@ function akreawp_widgets_init()
         'description'   => __('Drugi obszar widgetów w stopce.', 'akreawp'),
         'before_widget' => '<section id="%1$s" class="widget %2$s">',
         'after_widget'  => '</section>',
-        'before_title'  => '<h5 class="fw-bolder">',
+        'before_title'  => '<h5 class="fw-bolder noafter">',
         'after_title'   => '</h5>',
     ));
 
@@ -106,7 +106,7 @@ function akreawp_widgets_init()
         'description'   => __('Trzeci obszar widgetów w stopce.', 'akreawp'),
         'before_widget' => '<section id="%1$s" class="widget %2$s">',
         'after_widget'  => '</section>',
-        'before_title'  => '<h5 class="fw-bolder">',
+        'before_title'  => '<h5 class="fw-bolder noafter">',
         'after_title'   => '</h5>',
     ));
 
@@ -116,7 +116,7 @@ function akreawp_widgets_init()
         'description'   => __('Czwarty obszar widgetów w stopce.', 'akreawp'),
         'before_widget' => '<section id="%1$s" class="widget %2$s">',
         'after_widget'  => '</section>',
-        'before_title'  => '<h5 class="fw-bolder">',
+        'before_title'  => '<h5 class="fw-bolder noafter">',
         'after_title'   => '</h5>',
     ));
 
