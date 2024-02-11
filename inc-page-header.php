@@ -7,12 +7,18 @@
                     get_breadcrumb();
                     ?>
                 </p>
-
             </div>
-
         </div>
     </div>
 </div>
+
+<?php
+if (is_page_template('page-service.php')) { ?>
+    <div class="container-fluid" style="background:">
+        <?php echo get_the_post_thumbnail($post->ID, $size = 'full', ['class' => 'img-fluid lazy']); ?>
+    </div>
+<?php } ?>
+
 
 <div class="container-fluid bg-white py-5">
     <div class="container">
