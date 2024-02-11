@@ -11,8 +11,8 @@ include_once('inc-page-header.php');
     <div class="container">
         <div class="row pb-5 mb-3 d-flex justify-content-center" style="text-align:justify;">
             <?php
-            the_content();
-            show_forms(); ?>
+            show_forms();
+            the_content(); ?>
         </div>
     </div>
 </div>

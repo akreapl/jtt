@@ -8,4 +8,5 @@ include_once('inc-forms.php');
 include_once('inc-team.php');
 include_once('inc-contact.php');
 include_once('inc-news.php');
+include_once('inc-page-seo.php');
 get_footer(); ?>

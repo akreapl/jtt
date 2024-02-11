@@ -294,14 +294,14 @@ function shownews($catid, $numberofposts)
     if (is_mobile() == 1) {
         $numberofposts = 2;
     } else {
-        $numberofposts = 999;
+        $numberofposts = 3;
     };
     $my_query = new WP_Query(array('cat' => $catid, 'posts_per_page' => $numberofposts));
     if ($my_query->have_posts()) {
         while ($my_query->have_posts()) {
             $my_query->the_post();
             global $post;
-            echo "<div class=\"col-md-3 col-sm-12 d-flex\">"
+            echo "<div class=\"col-md-4 col-sm-12 d-flex\">"
                 . "<a href=\"" . get_permalink($post->ID) . "\" class=\"text-decoration-none\">"
                 . "<div class=\"news shadow-sm pb-1\">"
                 . "<div class=\"news-img overflow-hidden\">"
@@ -314,6 +314,35 @@ function shownews($catid, $numberofposts)
                 //. "<div class=\"news-date text-muted mx-3 small\">"
                 //. "<p class=\"my-0\">Data pub. " . get_the_time('m-d-Y', $post->ID) . "</p>"
                 //. "</div>"
+                . "<div class=\"news-excerpt mx-3 my-1 align-self-end\">"
+                . "<p class=\"news-excerpt-text text-black mt-1\">" . get_the_excerpt($post->ID) . "</p>"
+                . "</div>"
+                . "</div>"
+                . "</div>";
+        }
+    }
+    wp_reset_postdata();
+}
+
+function shownewsother($catid)
+{
+    $ida = get_the_ID();
+    //echo "POST ID" . $ida;
+    $my_query = new WP_Query(array('cat' => $catid, 'posts_per_page' => 3, 'post__not_in' => array($ida)));
+    if ($my_query->have_posts()) {
+        while ($my_query->have_posts()) {
+            $my_query->the_post();
+            global $post;
+            echo "<div class=\"col-md-4 col-sm-12 d-flex\">"
+                . "<a href=\"" . get_permalink($post->ID) . "\" class=\"text-decoration-none\">"
+                . "<div class=\"news shadow-sm pb-1\">"
+                . "<div class=\"news-img overflow-hidden\">"
+                . get_the_post_thumbnail($post->ID, $size = 'post-thumbnail', ['class' => 'img-fluid lazy'])
+                . "</a>"
+                . "</div>"
+                . "<div class=\"news-title mx-3\">"
+                . "<p class=\"fs-5 my-1\"><a href=\"" . get_permalink($post->ID) . "\" class=\"text-decoration-none\">" . get_the_title($post->ID) . "</a></p>"
+                . "</div>"
                 . "<div class=\"news-excerpt mx-3 my-1 align-self-end\">"
                 . "<p class=\"news-excerpt-text text-black mt-1\">" . get_the_excerpt($post->ID) . "</p>"
                 . "</div>"
@@ -726,6 +755,7 @@ function show_people($page_id, $numberofpages)
             }
 
             $personfunction = get_post_meta($mypage->ID, 'function', true);
+            $personscriptschema = get_post_meta($post->ID, 'person_script_schema', true);
 
             echo
 
@@ -741,7 +771,8 @@ function show_people($page_id, $numberofpages)
                 . "</div>"
                 . "</div>"
                 . "</a>"
-                . "</div>";
+                . "</div>"
+                . $personscriptschema;
             $i++;
         }
     }

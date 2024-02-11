@@ -300,3 +300,16 @@ input[type=number] {
 .border-notice {
     border:2px solid #a13941;
 }
+
+.rank-math-breadcrumb {
+    color:#fff;
+}
+
+.rank-math-breadcrumb a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.rank-math-breadcrumb p {
+    margin: 0 auto;
+}
