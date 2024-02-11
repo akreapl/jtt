@@ -15,8 +15,12 @@
 
 <?php
 if (is_page_template('page-service.php')) { ?>
-    <div class="container-fluid" style="background:">
-        <?php echo get_the_post_thumbnail($post->ID, $size = 'full', ['class' => 'img-fluid lazy']); ?>
+    <div class="container-fluid" style="background:#F1E2D1; max-height:250px;">
+        <div class="row">
+            <div class="container">
+                <?php echo get_the_post_thumbnail($post->ID, $size = 'full', ['class' => 'img-fluid lazy']); ?>
+            </div>
+        </div>
     </div>
 <?php } ?>
 
