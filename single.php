@@ -17,6 +17,11 @@ include_once('inc-page-header.php'); ?>
             the_content(); ?>
         </div>
     </div>
+    <div class="row">
+        <h2 class="text-center">Może cię również zainteresować:</h2>
+
+        <?php shownewsother(3); ?>
+    </div>
 </div>
 
 <?php get_footer(); ?>

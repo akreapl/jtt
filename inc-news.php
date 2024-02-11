@@ -18,7 +18,7 @@
                 <?php shownews(3, 4); ?>
 
                 <div class="col-md-4 col-sm-12 text-center my-5">
-                    <a href="https://jtt.akrea.pl/category/aktualnosci/" class="w-100 btn btn-outline-primary my-3">WIĘCEJ ARTYKUŁÓW</a>
+                    <a href="aktualnosci/" class="w-100 btn btn-outline-primary my-3">WIĘCEJ ARTYKUŁÓW</a>
                 </div>
             </div>
         </div>

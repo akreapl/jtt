@@ -2,10 +2,11 @@
     <div class="container">
         <div class="row d-flex justify-content-between align-items-center align-content-around">
             <div class="col-12 d-flex align-items-center">
-                <p class="breadcrumbs text-white m-0 p-0">
+                <p class="breadcrumbs text-white m-0 p-0" style="color:#fff !important;">
                     <?php
-                    get_breadcrumb();
+                    //get_breadcrumb();
                     ?>
+                    <?php if (function_exists('rank_math_the_breadcrumbs')) rank_math_the_breadcrumbs(); ?>
                 </p>
             </div>
         </div>
