@@ -313,3 +313,26 @@ input[type=number] {
 .rank-math-breadcrumb p {
     margin: 0 auto;
 }
+
+footer ul.menu {
+    padding-left:0 !important;
+}
+
+footer ul.menu li {
+		list-style-type: none;
+	margin:0 auto;
+	padding: 0;
+}
+
+footer ul.menu li a {
+	color:#fff;
+	text-decoration: none;
+}
+
+footer ul.menu li:hover {color: #d7af7d;
+    text-decoration: none !important;
+    list-style-type: none;}
+ 
+footer ul.menu li.menu-item:hover:after {
+	display:none;
+}
