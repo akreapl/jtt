@@ -17,7 +17,7 @@
 if (is_page_template('page-service.php')) { ?>
     <div class="container-fluid" style="background:#F1E2D1; max-height:250px;">
         <div class="row">
-            <div class="container">
+            <div class="container d-flex justify-content-center">
                 <?php echo get_the_post_thumbnail($post->ID, $size = 'full', ['class' => 'img-fluid lazy']); ?>
             </div>
         </div>
