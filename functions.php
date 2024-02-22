@@ -497,7 +497,7 @@ function makeemail_credit()
         '<br />Wysokość marży: <b>' . $creditmarginvalue . '</b>' .
         '<br />Rodzaj referencyjnej wysokości oprocentowania: <b>' . $referencetype . '</b>' .
         '<br />Akceptacja Polityki Prywatnośći: <b>' . $consentdict . '</b>';
-
+    echo
     $clientmessage = '<b>Szanowny Kliencie,</b><br /><br />
                         Kancelaria JTT potwierdza otrzymanie Państwa zapytania. 
                         <br /><br />
