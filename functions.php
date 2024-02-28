@@ -497,7 +497,7 @@ function makeemail_credit()
         '<br />Wysokość marży: <b>' . $creditmarginvalue . '</b>' .
         '<br />Rodzaj referencyjnej wysokości oprocentowania: <b>' . $referencetype . '</b>' .
         '<br />Akceptacja Polityki Prywatnośći: <b>' . $consentdict . '</b>';
-    echo
+
     $clientmessage = '<b>Szanowny Kliencie,</b><br /><br />
                         Kancelaria JTT potwierdza otrzymanie Państwa zapytania. 
                         <br /><br />
@@ -508,9 +508,9 @@ function makeemail_credit()
                         <b>SZCZEGÓŁY ZAPYTANIA:</b><br />' . $message;
 
     $to             = "info@akrea.pl";
-    $from           = "no-reply@jtt.akrea.pl";
-    $subject        = 'TEST Zapytanie od ' . $clientname;
-    $subject2       = 'TEST Potwierdzenie otrzymania zapytania | Kancelaria JTT';
+    $from           = "no-reply@kancelariajtt.pl";
+    $subject        = 'Zapytanie (kredyt ' . $currency . ') od ' . $clientname;
+    $subject2       = 'Potwierdzenie otrzymania zapytania | Kancelaria JTT';
 
     $headers        = 'MIME-Version: 1.0' . "\r\n";
     $headers        .= 'Content-type: text/html; charset=utf-8' . "\r\n";
@@ -569,9 +569,9 @@ function makeemail_death()
                         <b>SZCZEGÓŁY ZAPYTANIA:</b><br />' . $message;
 
     $to             = "info@akrea.pl";
-    $from           = "no-reply@jtt.akrea.pl";
-    $subject        = 'TEST Zapytanie od ' . $clientname;
-    $subject2       = 'TEST Potwierdzenie otrzymania zapytania | Kancelaria JTT';
+    $from           = "no-reply@kancelariajtt.pl";
+    $subject        = 'Zapytanie (zadośćuczynienie) od ' . $clientname;
+    $subject2       = 'Potwierdzenie otrzymania zapytania | Kancelaria JTT';
 
     $headers        = 'MIME-Version: 1.0' . "\r\n";
     $headers        .= 'Content-type: text/html; charset=utf-8' . "\r\n";
@@ -629,9 +629,9 @@ function makeemail_health()
                         <b>SZCZEGÓŁY ZAPYTANIA:</b><br />' . $message;
 
     $to             = "info@akrea.pl";
-    $from           = "no-reply@jtt.akrea.pl";
-    $subject        = 'TEST Zapytanie od ' . $clientname;
-    $subject2       = 'TEST Potwierdzenie otrzymania zapytania | Kancelaria JTT';
+    $from           = "no-reply@kancelariajtt.pl";
+    $subject        = 'Zapytanie (uszczerbek) od ' . $clientname;
+    $subject2       = 'Potwierdzenie otrzymania zapytania | Kancelaria JTT';
 
     $headers        = 'MIME-Version: 1.0' . "\r\n";
     $headers        .= 'Content-type: text/html; charset=utf-8' . "\r\n";
@@ -673,9 +673,9 @@ function makeemail_shortform()
                         <b>SZCZEGÓŁY ZAPYTANIA:</b><br />' . $message;
 
     $to             = "info@akrea.pl";
-    $from           = "no-reply@jtt.akrea.pl";
-    $subject        = 'TEST Zapytanie od ' . $clientname;
-    $subject2       = 'TEST Potwierdzenie otrzymania zapytania | Kancelaria JTT';
+    $from           = "no-reply@kancelariajtt.pl";
+    $subject        = 'Zapytanie od ' . $clientname;
+    $subject2       = 'Potwierdzenie otrzymania zapytania | Kancelaria JTT';
 
     $headers        = 'MIME-Version: 1.0' . "\r\n";
     $headers        .= 'Content-type: text/html; charset=utf-8' . "\r\n";
@@ -712,7 +712,7 @@ function show_people2($page_id)
             $thumbnailurl = wp_get_attachment_url(get_post_thumbnail_id($post->ID));
             $imgalt = get_post_meta(get_post_thumbnail_id($post->ID), '_wp_attachment_image_alt', true);
             $pagetitle = get_the_title($post->ID);
-            $personfunction = get_post_meta($post->ID, 'function', true);
+            $persontitle2 = get_post_meta($post->ID, 'person_title_short', true);
 
             echo "<div class=\"col-md-4 col-sm-12 mt-0 mb-5\">"
                 . "<a href=\"" . get_permalink($post->ID) . "\" class=\"d-flex justify-content-center lawyer\">"
@@ -721,7 +721,39 @@ function show_people2($page_id)
                 . "<img src=\"" . $thumbnailurl . "\" alt=\"" . $imgalt . "\" class=\"img-fluid lazy\" />"
                 . "<div class=\"lawyer-description position-absolute px-5\">"
                 . "<p class=\"h3 mt-4\">" . $pagetitle . "</p>"
-                . "<p>" . $personfunction . "</p>"
+                . "<p>" . $persontitle2 . "</p>"
+                . "</div>"
+                . "</div>"
+                . "</div>"
+                . "</a>"
+                . "</div>";
+        }
+    }
+}
+
+function show_people_all($page_id)
+{
+    $numberofpages = 999;
+
+    $my_query = new WP_Query(array('post_type' => 'page', 'post_parent' => $page_id, 'order' => 'asc', 'orderby' => 'menu_order', 'posts_per_page' => $numberofpages));
+
+    if ($my_query->have_posts()) {
+        while ($my_query->have_posts()) {
+            $my_query->the_post();
+            global $post;
+            $thumbnailurl = wp_get_attachment_url(get_post_thumbnail_id($post->ID));
+            $imgalt = get_post_meta(get_post_thumbnail_id($post->ID), '_wp_attachment_image_alt', true);
+            $pagetitle = get_the_title($post->ID);
+            $persontitle2 = get_post_meta($post->ID, 'person_title_short', true);
+
+            echo "<div class=\"col-md-4 col-sm-12 mt-0 mb-5\">"
+                . "<a href=\"" . get_permalink($post->ID) . "\" class=\"d-flex justify-content-center lawyer\">"
+                . "<div class=\"lawyer overflow-hidden d-flex justify-content-center align-items-center\">"
+                . "<div class=\"position-relative\">"
+                . "<img src=\"" . $thumbnailurl . "\" alt=\"" . $imgalt . "\" class=\"img-fluid lazy\" />"
+                . "<div class=\"lawyer-description position-absolute px-5\">"
+                . "<p class=\"h3 mt-4\">" . $pagetitle . "</p>"
+                . "<p>" . $persontitle2 . "</p>"
                 . "</div>"
                 . "</div>"
                 . "</div>"

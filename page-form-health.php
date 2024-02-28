@@ -9,9 +9,14 @@ include_once('inc-page-header.php');
 
 
 <div class="container">
-    <div class="row">
-        <div class="col-12" style="text-align: justify;">
-            <article>
+    <div class="row d-flex justify-content-between mb-4">
+
+        <?php
+        include_once('inc-form-health.php');
+        ?>
+
+        <div class="col-md-6 col-sm-12 ms-md-3 p-4" style="text-align: justify;">
+            <article class="border-notice p-3">
                 <?php
                 // Start the loop.
                 while (have_posts()) : the_post();
@@ -19,8 +24,6 @@ include_once('inc-page-header.php');
                     the_content();
                 // End of the loop.
                 endwhile;
-
-                include_once('inc-form-health.php');
                 ?>
             </article>
         </div>

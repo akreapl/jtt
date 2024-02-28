@@ -1,4 +1,4 @@
-<div class="d-flex flex-column justify-content-center align-content-center pb-4">
+<div class="col-md-5 col-sm-12 d-flex flex-column justify-content-center align-content-center pb-4">
     <form enctype="multipart/form-data" action="<?php echo esc_url(home_url('/')); ?>formularz-kredytowy-potwierdzenie/" method="post">
         <div class="mb-4">
             <label for="bank" class="form-label">Bank, który udzielał kredytu</label>

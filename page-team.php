@@ -14,7 +14,7 @@ include_once('inc-page-header.php');
 
             <?php
             the_content();
-            show_people2(327); ?>
+            show_people_all(327); ?>
 
         </div>
     </div>

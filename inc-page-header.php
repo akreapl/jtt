@@ -25,7 +25,7 @@ if (is_page_template('page-service.php')) { ?>
 <?php } ?>
 
 
-<div class="container-fluid bg-white py-5">
+<div class="container-fluid bg-white py-sm-2 py-md-4">
     <div class="container">
         <div class="row d-flex justify-content-start align-items-center align-content-around">
             <div class="col-sm-12 col-md-12">
