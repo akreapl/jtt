@@ -309,10 +309,10 @@ a:hover .query-form {
 }
 
 .menu-margin {
-    margin-top: 116px;
+    margin-top: 76px;
 
     @media (max-width: 768px) {
-        margin-top: 84px;
+        margin-top: 59px;
     }
 }
 
@@ -369,3 +369,5 @@ footer ul.menu li:hover {
 footer ul.menu li.menu-item:hover:after {
     display: none;
 }
+
+footer h5 {color: #d7af7d !important;}

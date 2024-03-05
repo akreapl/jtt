@@ -18,6 +18,7 @@ include_once('inc-page-header.php');
                         $consent == "on"
                     ) {
                         makeemail_credit();
+						
                         while (have_posts()) : the_post();
                             // Include the single post content template.
                             the_content();

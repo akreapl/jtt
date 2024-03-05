@@ -2,12 +2,11 @@
 <html lang="pl">
 
 <head>
-    <meta name="robots" content="noindex" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1.0">
     <?php wp_head(); ?>
     <meta name="author" content="akrea creative agency www.akrea.pl">
-    <?php //include_once('inc/favicons.html'); 
+    <?php include_once('inc-favicons.html'); 
     ?>
     <link id="theme-link1" href="<?php echo get_template_directory_uri(); ?>/dist/css/bootstrap.min.css" rel="stylesheet">
     <link id="theme-link2" href="<?php echo get_template_directory_uri(); ?>/style.css" rel="stylesheet">
@@ -26,10 +25,11 @@
         <nav class="navbar navbar-dark navbar-expand-md">
             <div class="container">
                 <a class="navbar-brand logo d-none d-md-block" href="<?php echo esc_url(home_url('/')); ?>">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/jtt-logo.webp" style="width:100px; height:auto;" alt="<?php echo bloginfo(); ?>" class="img-fluid lazy" />
+<!--                     <img src="<?php echo get_template_directory_uri(); ?>/img/jtt-logo-2.svg" style="width:170px; height:auto;" alt="<?php echo bloginfo(); ?>" class="img-fluid lazy" /> -->
+					<img src="<?php echo get_template_directory_uri(); ?>/img/jtt-logo-2.svg" style="width:240px; height:auto;" alt="<?php echo bloginfo(); ?>" class="img-fluid lazy" />
                 </a>
                 <a class="navbar-brand logo-min d-block d-md-none" href="<?php echo esc_url(home_url('/')); ?>">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/jtt-logo-min2.webp" style="width:90px; height:auto;" alt="<?php echo bloginfo(); ?>" class="img-fluid lazy" />
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/jtt-logo-2.svg" style="width:165px; height:auto;" alt="<?php echo bloginfo(); ?>" class="img-fluid lazy" />
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Menu">
                     <span class="navbar-toggler-icon "></span>
