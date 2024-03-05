@@ -2,6 +2,7 @@
     <form enctype="multipart/form-data" action="<?php echo esc_url(home_url('/')); ?>formularz-kredytowy-potwierdzenie/" method="post">
         <div class="mb-4">
             <label for="bank" class="form-label">Bank, który udzielał kredytu</label>
+            <input type="text" class="form-control d-none" name="formtype" id="formtype" value="chf">
             <input class="form-control" list="bank-list" name="bank" id="bank" placeholder="Wpisz nazwę banku">
             <datalist id="bank-list">
                 <?php include_once('inc-forms-bank-list.php'); ?>
@@ -31,28 +32,28 @@
         <div class="mb-4">
             <label for="credit-amount" class="form-label">Kwota kredytu</label>
             <div class="input-group">
-                <input type="number" pattern="\{d}" class="form-control" id="credit-amount" name="credit-amount" aria-label="Kwota kredytu" aria-describedby="Kwota kredytu">
-                <span class="input-group-text" id="credit-amount">CHF</span>
-                <input type="text" class="d-none" name="currency" id="currency" value="CHF">
+                <input style="width:70%;" type="number" pattern="\{d}" class="form-control" id="credit-amount" name="credit-amount" aria-label="Kwota kredytu" aria-describedby="Kwota kredytu">
+                <select class="form-select" name="currency" id="currency">
+                    <option value="CHF">CHF</option>
+                    <option value="PLN">PLN</option>
+                </select>
             </div>
         </div>
 
         <div class="mb-4">
-            <label for="credit-installment" class="form-label">Ilość rat kredytu</label>
+            <label for="credit-installment" class="form-label">Okres kredytowania</label>
             <div class="input-group">
                 <input type="number" pattern="\{d}" class="form-control" name="credit-installment" id="credit-installment" aria-label="Ilość rat kredytu" aria-describedby="Ilość rat kredytu">
-                <span class="input-group-text">RAT</span>
+                <span class="input-group-text">MIES.</span>
             </div>
         </div>
 
         <div class="mb-4">
             <label for="credit-margin-yes-no" class="form-label">Czy znasz wysokość marży kredytu</label>
-            <div class="input-group">
-                <input type="radio" class="btn-check" name="credit-margin-yes" id="credit-margin-yes" autocomplete="off">
-                <label class="btn btn-outline-primary mx-2" for="credit-margin-yes">TAK</label>
-
-                <input type="radio" class="btn-check" name="credit-margin-no" id="credit-margin-no" autocomplete="off">
-                <label class="btn btn-outline-primary mx-2" for="credit-margin-no">NIE</label>
+            <input type="text" class="form-control d-none" name="credit-margin-yes-no" id="credit-margin-yes-no" value="TAK">
+            <div class="btn-group btn-group-lg w-100" role="group" aria-label="Large button group">
+                <button type="button" class="btn btn-outline-primary button-choser active">TAK</button>
+                <button type="button" class="btn btn-outline-primary button-choser">NIE</button>
             </div>
         </div>
 

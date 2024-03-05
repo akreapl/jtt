@@ -2,6 +2,7 @@
     <form enctype="multipart/form-data" action="<?php echo esc_url(home_url('/')); ?>formularz-kredytowy-potwierdzenie/" method="post">
         <div class="mb-4">
             <label for="bank" class="form-label">Bank, który udzielał kredytu</label>
+            <input type="text" class="form-control d-none" name="formtype" id="formtype" value="wibor">
             <input class="form-control" list="bank-list" name="bank" id="bank" placeholder="Wpisz nazwę banku">
             <datalist id="bank-list">
                 <?php include_once('inc-forms-bank-list.php'); ?>
@@ -38,21 +39,19 @@
         </div>
 
         <div class="mb-4">
-            <label for="credit-installment" class="form-label">Ilość rat kredytu</label>
+            <label for="credit-installment" class="form-label">Okres kredytowania</label>
             <div class="input-group">
                 <input type="number" pattern="\{d}" min="1" class="form-control" name="credit-installment" id="credit-installment" aria-label="Ilość rat kredytu" aria-describedby="Ilość rat kredytu">
-                <span class="input-group-text">rat</span>
+                <span class="input-group-text">MIES.</span>
             </div>
         </div>
 
         <div class="mb-4">
             <label for="credit-margin-yes-no" class="form-label">Czy znasz wysokość marży kredytu</label>
-            <div class="input-group">
-                <input type="radio" class="btn-check" name="credit-margin-yes" id="credit-margin-yes" autocomplete="off" checked>
-                <label class="btn btn-outline-primary me-2" for="credit-margin-yes">TAK</label>
-
-                <input type="radio" class="btn-check" name="credit-margin-no" id="credit-margin-no" autocomplete="off">
-                <label class="btn btn-outline-primary ms-2" for="credit-margin-no">NIE</label>
+            <input type="text" class="form-control d-none" name="credit-margin-yes-no" id="credit-margin-yes-no" value="TAK">
+            <div class="btn-group btn-group-lg w-100" role="group" aria-label="Large button group">
+                <button type="button" class="btn btn-outline-primary button-choser active">TAK</button>
+                <button type="button" class="btn btn-outline-primary button-choser">NIE</button>
             </div>
         </div>
 

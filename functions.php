@@ -464,14 +464,14 @@ class bootstrap_5_wp_nav_menu_walker extends Walker_Nav_menu
 function makeemail_credit()
 {
     $emaildate      = date("Y-m-d H:i:s");
+    $formtype =  filter_input(INPUT_POST, 'formtype');
     $bank =  filter_input(INPUT_POST, 'bank');
     $credityear =  filter_input(INPUT_POST, 'credit-year');
     $month =  filter_input(INPUT_POST, 'month');
     $creditamount =  filter_input(INPUT_POST, 'credit-amount');
     $currency =  filter_input(INPUT_POST, 'currency');
     $creditinstallment =  filter_input(INPUT_POST, 'credit-installment');
-    $creditmarginyes =  filter_input(INPUT_POST, 'credit-margin-yes');
-    $creditmarginno =  filter_input(INPUT_POST, 'credit-margin-no');
+    $creditmarginyesno =  filter_input(INPUT_POST, 'credit-margin-yes-no');
     $creditmarginvalue =  filter_input(INPUT_POST, 'credit-margin-value');
     $referencetype =  filter_input(INPUT_POST, 'reference-type');
     $clientname =  filter_input(INPUT_POST, 'clientname');
@@ -491,9 +491,8 @@ function makeemail_credit()
         '<br />Data zaciągnięcia kredytu (miesiąc-rok): <b>' . $month . '-' . $credityear . '</b>' .
         '<br />Wysokość kredytu: <b>' . $creditamount . '</b>' .
         '<br />Waluta kredytu: <b>' . $currency . '</b>' .
-        '<br />Ilość rat: <b>' . $creditinstallment . '</b>' .
-        '<br />Marża znana: <b>' . $creditmarginyes . '</b>' .
-        '<br />Marża nieznana: <b>' . $creditmarginno . '</b>' .
+        '<br />Okres kredytowania: <b>' . $creditinstallment . ' miesięcy</b>' .
+        '<br />Marża znana: <b>' . $creditmarginyesno . '</b>' .
         '<br />Wysokość marży: <b>' . $creditmarginvalue . '</b>' .
         '<br />Rodzaj referencyjnej wysokości oprocentowania: <b>' . $referencetype . '</b>' .
         '<br />Akceptacja Polityki Prywatnośći: <b>' . $consentdict . '</b>';
@@ -507,7 +506,8 @@ function makeemail_credit()
                         Kancelaria JTT<br /><br /><hr />
                         <b>SZCZEGÓŁY ZAPYTANIA:</b><br />' . $message;
 
-    $to             = "info@akrea.pl";
+    $tochf          = "chf@kancelariajjt.pl";
+    $towibor        = "wibor@kancelariajjt.pl";
     $from           = "no-reply@kancelariajtt.pl";
     $subject        = 'Zapytanie (kredyt ' . $currency . ') od ' . $clientname;
     $subject2       = 'Potwierdzenie otrzymania zapytania | Kancelaria JTT';
@@ -516,6 +516,14 @@ function makeemail_credit()
     $headers        .= 'Content-type: text/html; charset=utf-8' . "\r\n";
 
     $headers        .= 'From: ' . $from . "\r\n";
+
+    if ($formtype == 'chf') {
+        $to = $tochf;
+    }
+
+    if ($formtype == 'wibor') {
+        $to = $towibor;
+    }
 
     mail($to, $subject, $message, $headers);
     mail($email, $subject2, $clientmessage, $headers);
