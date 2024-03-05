@@ -15,15 +15,33 @@
 
 <?php
 if (is_page_template('page-service.php')) { ?>
-    <div class="container-fluid" style="background:#F1E2D1; max-height:250px;">
+    <?php
+    if (is_mobile() == 1) { ?>
+
         <div class="row">
-            <div class="container d-flex justify-content-center">
-                <?php echo get_the_post_thumbnail($post->ID, $size = 'full', ['class' => 'img-fluid lazy']); ?>
+            <div class="container d-flex justify-content-center mb-4">
+                <?php
+                $mingraphic = get_post_meta($post->ID, 'mingraphic', true);
+                $mingraphicalt = get_post_meta($mingraphic, '_wp_attachment_image_alt', TRUE);
+
+                echo "<img src=" . get_template_directory_uri() . "/img/services-min/" . $mingraphic . " alt=" . $mingraphicalt . "/>";
+
+                ?>
             </div>
         </div>
-    </div>
-<?php } ?>
 
+    <?php } else { ?>
+        <div class="container-fluid" style="background:#F1E2D1; max-height:250px;">
+            <div class="row">
+                <div class="container d-flex justify-content-center">
+                    <?php
+                    echo get_the_post_thumbnail($post->ID, $size = 'full', ['class' => 'img-fluid lazy']);
+                    ?>
+                </div>
+            </div>
+        </div>
+    <?php }; ?>
+<?php } ?>
 
 <div class="container-fluid bg-white py-sm-2 py-md-4">
     <div class="container">

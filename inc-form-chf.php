@@ -2,7 +2,6 @@
     <form enctype="multipart/form-data" action="<?php echo esc_url(home_url('/')); ?>formularz-kredytowy-potwierdzenie/" method="post">
         <div class="mb-4">
             <label for="bank" class="form-label">Bank, który udzielał kredytu</label>
-            <input type="text" class="form-control d-none" name="formtype" id="formtype" value="chf">
             <input class="form-control" list="bank-list" name="bank" id="bank" placeholder="Wpisz nazwę banku">
             <datalist id="bank-list">
                 <?php include_once('inc-forms-bank-list.php'); ?>
