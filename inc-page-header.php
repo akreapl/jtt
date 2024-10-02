@@ -14,7 +14,7 @@
 </div>
 
 <?php
-if (is_page_template('page-service.php')) { ?>
+if (is_page_template('page-service.php') || is_page_template('page-team.php') ) { ?>
     <?php
     if (is_mobile() == 1) { ?>
 

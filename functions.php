@@ -576,7 +576,7 @@ function makeemail_death()
                         Kancelaria JTT<br /><br /><hr />
                         <b>SZCZEGÓŁY ZAPYTANIA:</b><br />' . $message;
 
-    $to             = "info@akrea.pl";
+    $to             = "kancelaria@kancelariajtt.pl";
     $from           = "no-reply@kancelariajtt.pl";
     $subject        = 'Zapytanie (zadośćuczynienie) od ' . $clientname;
     $subject2       = 'Potwierdzenie otrzymania zapytania | Kancelaria JTT';
@@ -636,7 +636,7 @@ function makeemail_health()
                         Kancelaria JTT<br /><br /><hr />
                         <b>SZCZEGÓŁY ZAPYTANIA:</b><br />' . $message;
 
-    $to             = "info@akrea.pl";
+    $to             = "kancelaria@kancelariajtt.pl";
     $from           = "no-reply@kancelariajtt.pl";
     $subject        = 'Zapytanie (uszczerbek) od ' . $clientname;
     $subject2       = 'Potwierdzenie otrzymania zapytania | Kancelaria JTT';
@@ -665,7 +665,7 @@ function makeemail_shortform()
     }
 
     // Lista niedozwolonych słów lub fraz (dodaj więcej według potrzeb)
-    $disallowedFragments = ['tiny', 'liepilmign', 'megan'];
+    $disallowedFragments = ['tiny', 'liepilmign', 'megan', 'ă', 'î', 'Kaylee', 'seo', 'www', 'online', 'game', 'video', 'http'];
 
     // Dodanie wyrażenia regularnego do sprawdzania znaków cyrylicy
     $disallowedFragments[] = '\p{Cyrillic}'; // Uwzględnia wszystkie znaki cyrylicy
@@ -694,7 +694,7 @@ function makeemail_shortform()
                         Kancelaria JTT<br /><br /><hr />
                         <b>SZCZEGÓŁY ZAPYTANIA:</b><br />' . $message;
 
-    $to = "info@akrea.pl";
+    $to = "kancelaria@kancelariajtt.pl";
     $from = "no-reply@kancelariajtt.pl";
     $subject = 'Zapytanie od ' . $clientname;
     $subject2 = 'Potwierdzenie otrzymania zapytania | Kancelaria JTT';
@@ -707,10 +707,10 @@ function makeemail_shortform()
     mail($email, $subject2, $clientmessage, $headers);
 }
 
-
 function makeemail_shortform2()
 {
     $emaildate      = date("Y-m-d H:i:s");
+
     $clientname =  filter_input(INPUT_POST, 'clientname');
     $email = filter_input(INPUT_POST, 'email');
     $phone = filter_input(INPUT_POST, 'phone');
@@ -737,7 +737,8 @@ function makeemail_shortform2()
                         Kancelaria JTT<br /><br /><hr />
                         <b>SZCZEGÓŁY ZAPYTANIA:</b><br />' . $message;
 
-    $to             = "info@akrea.pl";
+    //$to             = "kancelaria@kancelariajtt.pl";
+	$to             = "info@akrea.pl";
     $from           = "no-reply@kancelariajtt.pl";
     $subject        = 'Zapytanie od ' . $clientname;
     $subject2       = 'Potwierdzenie otrzymania zapytania | Kancelaria JTT';
@@ -747,8 +748,8 @@ function makeemail_shortform2()
 
     $headers        .= 'From: ' . $from . "\r\n";
 
-    mail($to, $subject, $message, $headers);
-    mail($email, $subject2, $clientmessage, $headers);
+    //mail($to, $subject, $message, $headers);
+   // mail($email, $subject2, $clientmessage, $headers);
 }
 
 function is_mobile()

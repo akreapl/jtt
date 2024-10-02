@@ -42,7 +42,7 @@
             <label for="credit-installment" class="form-label">Okres kredytowania</label>
             <div class="input-group">
                 <input type="number" pattern="\{d}" min="1" class="form-control" name="credit-installment" id="credit-installment" aria-label="Ilość rat kredytu" aria-describedby="Ilość rat kredytu">
-                <span class="input-group-text">MIES.</span>
+                <span class="input-group-text">MIESIĘCY</span>
             </div>
         </div>
 
