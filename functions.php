@@ -652,8 +652,65 @@ function makeemail_health()
 
 function makeemail_shortform()
 {
-    $emaildate      = date("Y-m-d H:i:s");
+    $emaildate = date("Y-m-d H:i:s");
 
+    $clientname = filter_input(INPUT_POST, 'clientname');
+    $email = filter_input(INPUT_POST, 'email');
+    $phone = filter_input(INPUT_POST, 'phone');
+    $info = filter_input(INPUT_POST, 'info');
+    $consent = filter_input(INPUT_POST, 'consent');
+    $consentdict = "NIE";
+    if ($consent == "on") {
+        $consentdict = "TAK";
+    }
+
+    // Lista niedozwolonych słów lub fraz (dodaj więcej według potrzeb)
+    $disallowedFragments = ['tiny', 'liepilmign', 'megan'];
+
+    // Dodanie wyrażenia regularnego do sprawdzania znaków cyrylicy
+    $disallowedFragments[] = '\p{Cyrillic}'; // Uwzględnia wszystkie znaki cyrylicy
+
+    // Przygotowanie wzorca wyrażenia regularnego do sprawdzenia
+    $pattern = '/' . implode('|', $disallowedFragments) . '/iu'; // 'i' - ignoruje wielkość liter, 'u' - traktuje wzorzec jako UTF-8
+
+    if (preg_match($pattern, $clientname) || preg_match($pattern, $info)) {
+        // Jeśli znaleziono niedozwolone fragmenty, zwróć bez wysyłania
+        return;
+    }
+    // Tworzenie i wysyłanie wiadomości, jeśli nie znaleziono niedozwolonych słów
+    $message = '<p style="font-size:1.3em;">Data zapytania: <b>' . $emaildate . '</b>' .
+        '<br />Imię i nazwisko: <b>' . $clientname . '</b>' .
+        '<br />Email: <b>' . $email . '</b>' .
+        '<br />Telefon: <b>' . $phone . '</b><br /><br />' .
+        '<br />Wiadmość: <b><br />' . $info . '</b><br />' .
+        '<br />Akceptacja Polityki Prywatnośći: <b>' . $consentdict . '</b>';
+
+    $clientmessage = '<b>Szanowny Kliencie,</b><br /><br />
+                        Kancelaria JTT potwierdza otrzymanie Państwa zapytania. 
+                        <br /><br />
+                        Informujemy, że nasi prawnicy przeanalizują zgłoszenie i skontaktują się z Państwem najpóźniej w ciągu 2 dni roboczych.
+                        <br /><br /><br /><br />
+                        Z poważaniem<br />
+                        Kancelaria JTT<br /><br /><hr />
+                        <b>SZCZEGÓŁY ZAPYTANIA:</b><br />' . $message;
+
+    $to = "info@akrea.pl";
+    $from = "no-reply@kancelariajtt.pl";
+    $subject = 'Zapytanie od ' . $clientname;
+    $subject2 = 'Potwierdzenie otrzymania zapytania | Kancelaria JTT';
+
+    $headers = 'MIME-Version: 1.0' . "\r\n";
+    $headers .= 'Content-type: text/html; charset=utf-8' . "\r\n";
+    $headers .= 'From: ' . $from . "\r\n";
+
+    mail($to, $subject, $message, $headers);
+    mail($email, $subject2, $clientmessage, $headers);
+}
+
+
+function makeemail_shortform2()
+{
+    $emaildate      = date("Y-m-d H:i:s");
     $clientname =  filter_input(INPUT_POST, 'clientname');
     $email = filter_input(INPUT_POST, 'email');
     $phone = filter_input(INPUT_POST, 'phone');
@@ -880,5 +937,18 @@ function show_forms()
                 . "</a>"
                 . "</div>";
         }
+    }
+}
+
+function spamcheck()
+{
+    $clientname =  filter_input(INPUT_POST, 'clientname');
+    //$email = filter_input(INPUT_POST, 'email');
+
+    $bannedlist = ["RobertWer"];
+
+    if (in_array($clientname, $bannedlist)) {
+        //echo "<h1>SPAM!</h1>";
+        die();
     }
 }

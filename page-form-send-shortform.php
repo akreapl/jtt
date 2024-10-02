@@ -17,6 +17,7 @@ include_once('inc-page-header.php');
                     if (
                         $consent == "on"
                     ) {
+                        spamcheck();
                         makeemail_shortform();
                         while (have_posts()) : the_post();
                             // Include the single post content template.
