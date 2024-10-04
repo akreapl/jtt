@@ -18,7 +18,7 @@
     </div>
 </div>
 
-<div class="d-flex align-content-center bg-white pb-3">
+<div class="d-flex align-content-center bg-white">
     <div class="container pb-5">
         <div class="row pb-5 d-flex justify-content-between align-content-between">
             <div class="col-md-4 col-sm-12 my-3">
@@ -103,6 +103,19 @@
                         </div>
                     </div>
                 </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="d-flex align-content-center">
+    <div class="container py-sm-2 py-md-5">
+        <div class="row gx-4 d-flex justify-content-center align-content-center align-items-center">
+            <div class="col-12 mt-5 mt-md-0 d-flex justify-content-center">
+                <h1 class="text-center">Pomagamy przedsiębiorcom, którzy otrzymali wezwanie do <span class="text-primary fw-bolder fst-italic">zwrotu subwencji z PFR (Państwowego Funduszu Rozwoju)</span></h1>
+            </div>
+            <div class="col-12 mt-5 mt-md-0 d-flex justify-content-center">
+                <p class="text-center">Jeśli otrzymali Państwo wezwanie z PFR dotyczące zwrotu subwencji z tzw. "tarczy covidowej" lub innych, <br />zachęcamy do zapoznania się z <a href="https://kancelariajtt.pl/wezwanie-do-zwrotu-subwencji-z-tarczy-covidowej/"><b>naszym artykułem</b></a> na ten temat i do <b><a href="https://kancelariajtt.pl/kontakt/">kontaktu z naszą Kancelarią</a></b></p>
             </div>
         </div>
     </div>
